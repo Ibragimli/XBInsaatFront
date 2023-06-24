@@ -1,0 +1,45 @@
+@media (min-width: 992px) {
+
+    #projectsModalScrollable {
+        .modal-dialog {
+            .modal-content {
+    
+                .modal-body {
+                 
+                    section {
+                        .container {
+                            .row {
+                                display: flex;
+                                align-items: center;
+                                .col-lg-4 {
+                                    width: 30% ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal-lg,
+    .modal-xl {
+        max-width: 1050px !important;
+    }
+}
+@media (min-width: 1200px) {
+    .modal-xl {
+        max-width: 1290px !important;
+
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+
+@media only screen and (max-width: 576px) {
+    main {}
+}
