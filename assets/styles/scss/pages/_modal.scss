@@ -1,6 +1,12 @@
-.modal {
+.modal,
+.fade {
+    background-color: transparent !important;
 
     .modal-dialog {
+        transform: translate(0, -25px) !important;
+        display: flex !important;
+        align-items: center !important;
+        height: 100vh !important;
 
         .modal-content {
             border: 0px solid rgba(0, 0, 0, .2) !important;
@@ -60,6 +66,11 @@
         }
     }
 }
+
+.show{
+    display: block!important;
+}
+
 
 // .modal-backdrop.fade.show {
 //     display: none;

@@ -41,7 +41,10 @@
                 <div class="headRight ">
                     <div class="headLoginLangueage">
                         <div class="headLogin">
-                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModalScrollable">
+                                <img class="userImage" src="./assets/Images/user.png" alt="">
+                                <img class="userWhiteImage" src="./assets/Images/user-white.png" alt="">
+                            </a>
                         </div>
                         <div class="headLanguage mt-4">
                             <div class="dropdown">
@@ -69,9 +72,11 @@
 
     <main>
 
-        <!-- <div class="slider">
+
+        <!-- Revo Slider -->
+        <div class="slider">
             <div class="slide active">
-                <img src="./assets/Images/slide-susa.gif" alt="Resim 1">
+                <img src="./assets/Images/cam.png" alt="Resim 1">
             </div>
             <div class="slide">
                 <img src="./assets/Images/cam.png" alt="Resim 2">
@@ -88,45 +93,75 @@
             <div class="slide">
                 <img src="./assets/Images/home_architect2_slider2-1568x653.jpg" alt="Resim 6">
             </div>
-        </div> -->
+        </div>
 
-        <section>
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="revolutionSliderclass">
-                        <div class="kutus row">
-                            <div class="col-lg-3 d-flex justify-content-end">
+        <!-- Boxs -->
+        <section id="sliderBoxs">
+            <div class=" sliderRangeBox">
+                <div class=" revolutionSliderclass " style="display: flex; justify-content: end; ">
+                    <div class="kutus d-flex">
+                        <div class="kutu generalKutu">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#generalModalScrollable">
+                                <div class="kutuFeature" style="background-color: #000;" onmouseover="showSlide(0)">
+                                    <span style="color: white;">General</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="kutu servicesKutu">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#servicesModalScrollable">
+                                <div class="kutuFeature" style="background-color: #fff;" onmouseover="showSlide(1)">
+                                    <span style="color: black;">Services</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="kutu projectsKutu">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#projectsModalScrollable">
+                                <div class="kutuFeature" style="background-color: #00A7C6;" onmouseover="showSlide(2)">
+                                    <span style="color: white;">Projects</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectsModalScrollable">
-                                    <div class="kutu" style="background-color: #000;" onmouseover="showSlide(0)">
-                                        <span style="color: white;">General</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-3 ">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectsModalScrollable">
-                                    <div class="kutu" style="background-color: red;" onmouseover="showSlide(1)">
-                                        <span style="color: #000;">Serives</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-3 d-flex justify-content-start">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectsModalScrollable">
-                                    <div class="kutu" style="background-color: #00A7C6;" onmouseover="showSlide(2)">
-                                        <span style="color: white;">Projects</span>
-                                    </div>
-                                </a>
-                            </div>
+                </div>
 
+                <div class=" revolutionSliderclass " style="display: flex; justify-content: end; ">
+                    <div class="kutus d-flex ">
+                        <div class="kutu newsKutu">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#newsModalScrollable">
+                                <div class="kutuFeature" style="background-color: #576676;" onmouseover="showSlide(3)">
+                                    <span style="color: white;">News</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="kutu camKutu">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#camsModalScrollable">
+                                <div class="kutuFeature" style="background-color: #fff;" onmouseover="showSlide(4)">
+                                    <span style="color: black;">CAM</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" revolutionSliderclass ">
+                    <div class="kutus  d-flex justify-content-end">
+                        <div class="kutu contactusKutu">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#contactModalScrollable">
+                                <div class="kutuFeature" style="background-color: #000;" onmouseover="showSlide(5)">
+                                    <span style="color: white;">Contact us</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- <section id="boxDesctipions">
+
+        <!-- Description -->
+        <section id="boxDesctipions">
             <div class="row">
-                <div class="boxDesc col-lg-3">
+                <div class="boxDesc active col-lg-3">
                     <h2 style="color: #000;">General</h2>
                     <p style="color: #000;">
                         Müasir dövürdə rəqabət mühitinə
@@ -259,22 +294,72 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- Modal Projects -->
-        <div class="modal fade" id="projectsModalScrollable" tabindex="-1" role="dialog"
-            aria-labelledby="projectsModalScrollableTitle" aria-hidden="true">
+        <!-- Modal Contact -->
+        <div class="modal fade" id="contactModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="contactModalScrollableTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
-                <div class="modal-content">
+                <div class="modal-content ">
                     <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="projectsModalScrollableTitle">All Projects
+                        <h2 style="color:#00a7c6;" class="modal-title" id="contactModalScrollableTitle">
+                            Bizimlə Əlaqə
                         </h2>
                         <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
                     <div class="modal-body">
+                        <div class="containerContact">
+                            <div class="row">
+                                <div class="col-lg-6 contactMap">
+                                    <h4 style="color: #8a8a8a;"><i class="far fa-map"></i> Xəritə</h4>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.1685180209893!2d49.869250415107715!3d40.38295756561722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4d1e056aef%3A0xaf4d0c1f7aad60b7!2sDemirchi%20Tower!5e0!3m2!1sen!2s!4v1618769297270!5m2!1sen!2s"
+                                        width="100%" height="250" style="border:0;" allowfullscreen=""
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="col-lg-6 contactInfo">
+                                    <h4 style="color: #8a8a8a;"><i class="fas fa-chevron-right"></i> Əlaqə vasitələri
+                                    </h4>
+                                    <p style="color: #8a8a8a;">
+                                        Demirchi Tower 2104 | Khojaly Avenue 37 | Az1025 | Baku
+                                        Azerbaijan
+                                        <br>
+                                        <br>
+                                        <i class="fas fa-phone-volume"> </i> +99412 310 57 02
+                                        <br>
+                                        <i class="far fa-envelope-open"> </i> info@xaribulbulgroup.az
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="wp-block-columns is-layout-flex wp-container-7">
+                                <div class="wp-block-column kenarsag iceri is-layout-flow">
 
+                                </div>
+                                <div class="wp-block-column is-layout-flow">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Projects -->
+        <div class="modal fade" id="projectsModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="projectsModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="projectsModalScrollableTitle">All Projects
+                        </h2>
+                        <button type="button" id="close-first" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
                         <!-- Older posts -->
                         <section class="mt-2 fx-fade-up">
                             <div class="container">
@@ -282,7 +367,8 @@
                                     <!-- Post -->
                                     <div class="col-lg-4  col-md-9 mb-2 projectBoxs">
                                         <!-- Featured image -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test">
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
                                             <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
                                                 class="img-fluid rounded hover-lift-light" alt="">
                                         </a>
@@ -299,31 +385,32 @@
                                             Read post
                                         </a>
                                     </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-9 mb-2 projectBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
+                                            <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
 
+                                        <!-- Title -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
+                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Gravida ullamcorper
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
                                     <!-- Post -->
                                     <div class="col-lg-4  col-md-9 mb-2 projectBoxs">
                                         <!-- Featured image -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test">
-                                            <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
-                                                class="img-fluid rounded hover-lift-light" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
-                                            Gravida ullamcorper
-                                        </a>
-
-                                        <!-- Read more -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
-                                            Read post
-                                        </a>
-                                    </div>
-                                    <!-- Post -->
-                                    <div class="col-lg-4 col-md-9 mb-2 projectBoxs">
-                                        <!-- Featured image -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test">
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
                                             <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
                                                 class="img-fluid rounded hover-lift-light" alt="">
                                         </a>
@@ -340,11 +427,11 @@
                                             Read post
                                         </a>
                                     </div>
-
                                     <!-- Post -->
-                                    <div class="col-lg-4 col-md-9 mb-2 projectBoxs">
+                                    <div class="col-lg-4  col-md-9 mb-2 projectBoxs">
                                         <!-- Featured image -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test">
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
                                             <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
                                                 class="img-fluid rounded hover-lift-light" alt="">
                                         </a>
@@ -361,8 +448,6 @@
                                             Read post
                                         </a>
                                     </div>
-
-
 
                                 </div>
 
@@ -374,20 +459,19 @@
                                 </a>
                             </div>
                         </section>
-
                     </div>
                 </div>
             </div>
         </div>
         <!-- Modal Project -->
-        <div class="modal fade " id="project-test" tabindex="-1" role="dialog" aria-labelledby="project-testTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
-                <div class="modal-content shadow-lg">
+        <div class="modal fade  projectModal" id="project-test" tabindex="-1" role="dialog"
+            aria-labelledby="project-testTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content">
                     <div class="modal-header">
                         <h2 style="color:#00a7c6;" class="modal-title" id="project-testTitle"> Gravida ullamcorper</h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
                     <div class="modal-body">
@@ -395,14 +479,13 @@
                         <!-- Older posts -->
                         <section class="mt-2 fx-fade-up">
                             <div class="container">
-
                                 <div class="row mt-4 justify-content-center ">
                                     <!-- Post -->
-                                    <!-- Featured image -->
 
+                                    <!-- Featured image -->
                                     <div class="col-md-9 col-sm-11 mb-2 ">
-                                        <div class="slider">
-                                            <div class="slide">
+                                        <div class="projectSliders">
+                                            <div class="projectSlide">
                                                 <div class="image-container">
                                                     <a href="#!">
                                                         <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
@@ -411,7 +494,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="slide">
+                                            <div class="projectSlide">
                                                 <div class="image-container">
                                                     <a href="#!">
                                                         <img src="./assets/Images/slide-susa.gif"
@@ -420,10 +503,10 @@
 
                                                 </div>
                                             </div>
-                                            <div class="slide">
+                                            <div class="projectSlide">
                                                 <div class="image-container">
                                                     <a href="#!">
-                                                        <img src="./assets/Images/slide-service3-scaled.gif"
+                                                        <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
                                                             class="img-fluid rounded hover-lift-light" alt="">
                                                     </a>>
                                                 </div>
@@ -443,39 +526,41 @@
                                     <div class="col-md-9 mb-2">
                                         <p class="d-inline-block  mt-2 ">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
-                                            iusto asperiores impedit quo veniam aliquid obcaecati quam vitae distinctio
-                                            ipsam tempora atque molestias cum voluptatem? Repudiandae deleniti est
-                                            eligendi.
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
-                                            iusto asperiores impedit quo veniam aliquid obcaecati quam vitae distinctio
-                                            ipsam tempora atque molestias cum voluptatem? Repudiandae deleniti est
-                                            eligendi.
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
-                                            iusto asperiores impedit quo veniam aliquid obcaecati quam vitae distinctio
-                                            ipsam tempora atque molestias cum voluptatem? Repudiandae deleniti est
-                                            eligendi.
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
-                                            iusto asperiores impedit quo veniam aliquid obcaecati quam vitae distinctio
-                                            ipsam tempora atque molestias cum voluptatem? Repudiandae deleniti est
-                                            eligendi.
+
+
 
                                         </p>
                                     </div>
-                                    <!-- Go to previous posts -->
-                                    <div class="col-md-9 mb-2 text-end">
-                                        <button type="button"
-                                            class="p-2  close btn btn-pastel-primary border-bottom  border-primary pb-1   text-decoration-none hover-lift-light text-uppercase-bold-sm mt-3 mb-1"
-                                            data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">
-                                                <i class="fas fa-chevron-left fa-sm mr-2"></i>
-                                                Geriyə qayıt
-                                            </span>
-                                        </button>
+
+                                    <!-- Shops -->
+                                    <div class="col-md-9 mb-2 projectShops">
+                                        <h2 class="mb-3 mt-2">Mağazalar</h2>
+                                        <div class="row">
+                                            <div class="col-lg-3  col-md-9 mb-2 projectShopBoxs">
+                                                <!-- Featured image -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info">
+                                                    <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                        class="img-fluid rounded hover-lift-light" alt="">
+                                                </a>
+                                                <!-- Title -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
 
+                                    <!-- Go to previous posts -->
+                                    <div class="col-md-9 mb-2 text-end">
+                                        <!-- Go to previous posts -->
+                                        <a href="#"
+                                            class="projectBackBtn btn btn-pastel-primary hover-lift-light text-uppercase-bold-sm mt-4">
+                                            <i class="fas fa-chevron-left fa-sm mr-2"></i>
+                                            Ana səhİfəyə qayıt
+                                        </a>
+                                    </div>
                                 </div>
-
-
                             </div>
                         </section>
 
@@ -486,6 +571,93 @@
         <!-- Modal Project -->
 
 
+        <!-- Modal Info Project -->
+        <div class="modal fade  projectInfoModal" id="project-info" tabindex="-1" role="dialog"
+            aria-labelledby="project-testTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="project-testTitle"> Gravida ullamcorper</h2>
+                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row mt-4 justify-content-center ">
+                                    <!-- Post -->
+                                    <!-- Featured image -->
+                                    <div class="col-md-9 col-sm-11 mb-2 ">
+                                        <div class="projectInfoSliders">
+                                            <div class="projectInfoSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="projectInfoSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/slide-susa.gif"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="projectInfoSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>>
+                                                </div>
+                                            </div>
+                                            <a class="info-prev-btn" href="#">&lt;</a>
+                                            <a class="info-next-btn" href="#">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <!-- Title -->
+
+                                    <div class="col-md-9 mb-2">
+                                        <h1 class="h5 d-block text-dark text-decoration-none mt-4">
+                                            Info Test Modal
+                                        </h1>
+                                    </div>
+                                    <!-- Read more -->
+                                    <div class="col-md-9 mb-2">
+                                        <p class="d-inline-block  mt-2 ">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
+                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
+                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
+                                            dolorem veniam.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
+                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
+                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
+                                            dolorem veniam.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
+                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
+                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
+                                            dolorem veniam.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
+                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
+                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
+                                            dolorem veniam.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Info Project -->
 
 
         <!-- General Modal -->
@@ -524,7 +696,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Services Modal -->
         <div class="modal fade" id="servicesModalScrollable" tabindex="-1" aria-labelledby="servicesModalScrollable"
             aria-hidden="true">
@@ -579,6 +750,163 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal Cams -->
+        <div class="modal fade" id="camsModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="camModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="camModalScrollableTitle">Online CAMs</h2>
+                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row mt-4">
+                                    <!-- Post -->
+                                    <div class="col-lg-4 col-md-6 camBox">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#camModal-test">
+                                            <img src="./assets/Images/Asset-1-1.png"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-toggle="modal" data-target="#camModal-test"
+                                            class="h5 d-block text-dark text-decoration-none mt-4">
+                                            Port Baku Residence
+                                        </a>
+                                    </div>
+
+                                </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Cam -->
+        <div class="modal fade camModal" id="camModal-test" tabindex="-1" role="dialog"
+            aria-labelledby="camModal-testTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
+                <div class="modal-content shadow-lg">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="camModal-testTitle">
+                            Port Baku Residence Online
+                            CAM
+                        </h2>
+                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row justify-content-center mt-4">
+                                    <!-- Post -->
+                                    <div class="col-md-9 col-sm-11">
+                                        <!-- Camera -->
+                                        <div id="video-container">
+                                            <iframe id="video-frame" width="100%" height="350px" src="" frameborder="0"
+                                                allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                    <!-- Go to previous posts -->
+                                    <div class="col-md-9 col-sm-11 mb-2 text-end">
+                                        <a href="#" data-bs-dismiss="modal" aria-label="Close"
+                                            class="projectBackBtn btn btn-pastel-primary hover-lift-light text-uppercase-bold-sm mt-4">
+                                            <i class="fas fa-chevron-left fa-sm mr-2"></i>
+                                            Geriyə qayıt
+                                        </a>
+                                    </div>
+                                </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Login -->
+        <div class="modal fade" id="loginModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="loginModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
+                <div class="modal-content shadow-lg">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="loginModalScrollableTitle">
+                            İstifadəçi kabineti
+                        </h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="wp-block-columns is-layout-flex wp-container-11">
+                            <div class="wp-block-column is-layout-flow" style="flex-basis:50%">
+                               
+                                <form class="row justify-content-center" action="#" method="post" enctype="multipart/form-data">
+                                    <div class="wp-block-image">
+                                        <a href="#">
+                                            <img decoding="async" src="./assets/Images/xaribulbulgroup-logo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <label class="quform-label-text" for="quform_1_3_5d0a66">
+                                            İstifadəçi adı<span class="quform-required">*</span>
+                                        </label>
+                                        <input class="form-control" type="text" aria-label="default input example">
+
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <label class="quform-label-text" for="quform_1_4_5d0a66">
+                                            Şifrə<span class="quform-required">*</span>
+                                        </label>
+                                        <input type="password" id="inputPassword5" class="form-control"
+                                            aria-labelledby="passwordHelpBlock">
+
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <input type="checkbox" class="" value="Məni unutma">
+                                        <span class="quform-option-text">
+                                            Məni
+                                            unutma
+                                        </span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <button name="quform_submit" type="submit" class="quform-submit" value="submit">
+                                            <span class="quform-button-text quform-button-submit-text">
+                                                DAXİL
+                                                OL
+                                            </span><span class="quform-button-icon quform-button-submit-icon">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                            </div>
+                            </form>
+                        </div>
+
+
+
+                        <div class="wp-block-column is-layout-flow" style="flex-basis:25%"></div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -617,405 +945,6 @@
                 </div>
             </div>
         </div>
-        <!-- Modal Services -->
-        <div class="modal fade" id="servicesModalScrollable" tabindex="-1" role="dialog"
-            aria-labelledby="servicesModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
-                <div class="modal-content shadow-lg">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="servicesModalScrollableTitle">
-                            Xidmətlər
-                        </h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="wp-block-columns is-layout-flex wp-container-4">
-                            <div class="wp-block-column is-layout-flow">
-                                <h3>Memarlıq</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit sollicitudin
-                                    ipsum
-                                    a consectetur. Suspendisse potenti. Donec in mauris ullamcorper, semper est non,
-                                    tristique nisi. Curabitur placerat eros felis, a porta ipsum sodales interdum.
-                                    Aliquam
-                                    ac orci nibh. Aenean sit amet interdum enim. Aenean ornare libero ante, sed
-                                    sollicitudin
-                                    tellus placerat vel. Integer auctor lacus pulvinar velit tincidunt tempus. Morbi
-                                    aliquam
-                                    malesuada quam. Proin quis magna et nunc pulvinar commodo.
-                                </p>
-                                <div class="wp-block-image">
-                                    <figure class="aligncenter size-large is-resized">
-                                        <img decoding="async" loading="lazy"
-                                            src="http://xbinsaat.az/wp-content/uploads/2021/04/icon1.png" alt=""
-                                            width="31" height="65">
-                                    </figure>
-                                </div>
-                                <p class="has-text-align-center"></p>
-                            </div>
-
-                            <div class="wp-block-column kenar iceri is-layout-flow">
-                                <h3>Layihə</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit sollicitudin
-                                    ipsum
-                                    a consectetur. Suspendisse potenti. Donec in mauris ullamcorper, semper est non,
-                                    tristique nisi. Curabitur placerat eros felis, a porta ipsum sodales interdum.
-                                    Aliquam
-                                    ac orci nibh. Aenean sit amet interdum enim. Aenean ornare libero ante, sed
-                                    sollicitudin
-                                    tellus placerat vel. Integer auctor lacus pulvinar velit tincidunt tempus. Morbi
-                                    aliquam
-                                    malesuada quam. Proin quis magna et nunc pulvinar commodo.
-                                </p>
-                                <div class="wp-block-image">
-                                    <figure class="aligncenter size-large is-resized">
-                                        <img decoding="async" loading="lazy"
-                                            src="http://xbinsaat.az/wp-content/uploads/2021/04/icon2.png" alt=""
-                                            width="53" height="46">
-                                    </figure>
-                                </div>
-                                <p class="has-text-align-center"></p>
-                            </div>
-
-                            <div class="wp-block-column is-layout-flow">
-                                <h3>Tikinti</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit sollicitudin
-                                    ipsum
-                                    a consectetur. Suspendisse potenti. Donec in mauris ullamcorper, semper est non,
-                                    tristique nisi. Curabitur placerat eros felis, a porta ipsum sodales interdum.
-                                    Aliquam
-                                    ac orci nibh. Aenean sit amet interdum enim. Aenean ornare libero ante, sed
-                                    sollicitudin
-                                    tellus placerat vel. Integer auctor lacus pulvinar velit tincidunt tempus. Morbi
-                                    aliquam
-                                    malesuada quam. Proin quis magna et nunc pulvinar commodo.
-                                </p>
-                                <div class="wp-block-image">
-                                    <figure class="aligncenter size-large is-resized">
-                                        <img decoding="async" loading="lazy"
-                                            src="http://xbinsaat.az/wp-content/uploads/2021/04/icon3.png" alt=""
-                                            width="70" height="35">
-                                    </figure>
-                                </div>
-                                <p class="has-text-align-center"></p>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Cams -->
-        <div class="modal fade" id="camModalScrollable" tabindex="-1" role="dialog"
-            aria-labelledby="camModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
-                <div class="modal-content shadow-lg">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="camModalScrollableTitle">Online CAMs</h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Older posts -->
-                        <section class="mt-2 fx-fade-up">
-                            <div class="container">
-                                <div class="row mt-4">
-                                    <!-- Post -->
-                                    <div class="col-md-4">
-                                        <!-- Featured image -->
-                                        <a href="#!" data-toggle="modal" data-target="#camModal-test">
-                                            <img src="./assets/Images/Asset-1-1.png"
-                                                class="img-fluid rounded hover-lift-light" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <a href="#!" data-toggle="modal" data-target="#camModal-test"
-                                            class="h5 d-block text-dark text-decoration-none mt-4">
-                                            Port Baku Residence
-                                        </a>
-                                    </div>
-
-
-                                </div>
-                        </section>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Cam -->
-        <div class="modal fade" id="camModal-test" tabindex="-1" role="dialog" aria-labelledby="camModal-testTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
-                <div class="modal-content shadow-lg">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="camModal-testTitle">
-                            Port Baku Residence Online
-                            CAM
-                        </h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Older posts -->
-                        <section class="mt-2 fx-fade-up">
-                            <div class="container">
-                                <div class="row justify-content-center mt-4">
-                                    <!-- Post -->
-                                    <div class="col-md-9 col-sm-11">
-                                        <!-- Camera -->
-                                        <!-- <div id="video-container">
-                                  <video id="video-stream" autoplay></video>
-                              </div> -->
-                                        <div id="video-container">
-                                            <iframe id="video-frame" width="100%" height="350px" src="" frameborder="0"
-                                                allowfullscreen></iframe>
-                                        </div>
-
-                                    </div>
-                                    <!-- Go to previous posts -->
-                                    <div class="col-md-9 col-sm-11 mb-2 text-end">
-                                        <button type="button"
-                                            class="p-2  close btn btn-pastel-primary border-bottom  border-primary pb-1   text-decoration-none hover-lift-light text-uppercase-bold-sm mt-3 mb-1"
-                                            data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">
-                                                <i class="fas fa-chevron-left fa-sm mr-2"></i>
-                                                Geriyə qayıt
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                        </section>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Contact -->
-        <div class="modal fade" id="contactModalScrollable" tabindex="-1" role="dialog"
-            aria-labelledby="contactModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
-                <div class="modal-content shadow-lg">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="contactModalScrollableTitle">
-                            Bizimlə Əlaqə
-                        </h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="wp-block-columns is-layout-flex wp-container-7">
-                            <div class="wp-block-column kenarsag iceri is-layout-flow">
-                                <h4 style="color: #8a8a8a;"><i class="far fa-map"></i> Xəritə</h4>
-
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.1685180209893!2d49.869250415107715!3d40.38295756561722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4d1e056aef%3A0xaf4d0c1f7aad60b7!2sDemirchi%20Tower!5e0!3m2!1sen!2s!4v1618769297270!5m2!1sen!2s"
-                                    width="100%" height="250" style="border:0;" allowfullscreen=""
-                                    loading="lazy"></iframe>
-                            </div>
-                            <div class="wp-block-column is-layout-flow">
-                                <h4 style="color: #8a8a8a;"><i class="fas fa-chevron-right"></i> Əlaqə vasitələri</h4>
-                                <p style="color: #8a8a8a;">
-                                    Demirchi Tower 2104 | Khojaly Avenue 37 | Az1025 | Baku
-                                    Azerbaijan<br><br><i class="fas fa-phone-volume"></i> +99412 310 57 02<br><i
-                                        class="far fa-envelope-open"></i> info@xaribulbulgroup.az
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Login -->
-        <div class="modal fade" id="loginModalScrollable" tabindex="-1" role="dialog"
-            aria-labelledby="loginModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
-                <div class="modal-content shadow-lg">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="loginModalScrollableTitle">
-                            İstifadəçi kabineti
-                        </h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="wp-block-columns is-layout-flex wp-container-11">
-                            <div class="wp-block-column is-layout-flow" style="flex-basis:25%"></div>
-                            <div class="wp-block-column is-layout-flow" style="flex-basis:50%">
-                                <div class="wp-block-image">
-                                    <figure class="aligncenter size-large">
-                                        <a href="#">
-                                            <img decoding="async" src="./assets/Images/xaribulbulgroup-logo.png" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div id="quform-5d0a66" class="quform quform-1 quform-support-page-caching">
-                                    <form id="quform-form-5d0a66"
-                                        class="quform-form quform-form-1 quform-ajax-initialized" action="#"
-                                        method="post" enctype="multipart/form-data" novalidate="novalidate"
-                                        data-options="{&quot;id&quot;:1,&quot;uniqueId&quot;:&quot;5d0a66&quot;,&quot;theme&quot;:&quot;&quot;,&quot;ajax&quot;:true,&quot;logic&quot;
-                                  :{&quot;logic&quot;:[],&quot;dependents&quot;:[],&quot;elementIds&quot;:[],&quot;dependentElementIds&quot;:[],&quot;animate&quot;:true},&quot;
-                                  currentPageId&quot;:1,&quot;errorsIcon&quot;:&quot;&quot;,&quot;updateFancybox&quot;:true,&quot;hasPages&quot;:false,&quot;pages&quot;:[1],&quot;
-                                  pageProgressType&quot;:&quot;numbers&quot;,&quot;tooltipsEnabled&quot;:true,&quot;tooltipClasses&quot;:&quot;qtip-quform-dark qtip-shadow&quot;
-                                  ,&quot;tooltipMy&quot;:&quot;left center&quot;,&quot;tooltipAt&quot;:&quot;right center&quot;,&quot;isRtl&quot;:false,&quot;scrollOffset&quot;:-50,
-                                  &quot;scrollSpeed&quot;:800}">
-                                        <button class="quform-default-submit" name="quform_submit" type="submit"
-                                            value="submit" aria-hidden="true"></button>
-                                        <div class="quform-form-inner quform-form-inner-1">
-                                            <input type="hidden" name="quform_form_id" value="1"><input type="hidden"
-                                                name="quform_form_uid" value="d20544"><input type="hidden"
-                                                name="quform_count" value="1"><input type="hidden" name="form_url"
-                                                value="http://xbinsaat.az/"><input type="hidden" name="referring_url"
-                                                value="http://xbinsaat.az/"><input type="hidden" name="post_id"
-                                                value="18"><input type="hidden" name="post_title" value="home"><input
-                                                type="hidden" name="quform_current_page_id" value="1"><input
-                                                type="hidden" name="quform_csrf_token"
-                                                value="qsOruDsCRrlWdXGzc2LXN6UInJo9Orzakdjo8q6y">
-                                            <div
-                                                class="quform-elements quform-elements-1 quform-cf quform-responsive-elements-phone-landscape">
-                                                <div
-                                                    class="quform-element quform-element-page quform-page-1 quform-page-1_1 quform-cf quform-group-style-plain quform-first-page quform-last-page quform-current-page">
-                                                    <div class="quform-child-elements">
-                                                        <div
-                                                            class="quform-element quform-element-text quform-element-1_3 quform-cf quform-element-required">
-                                                            <div class="quform-spacer">
-                                                                <div class="quform-label quform-label-1_3">
-                                                                    <label class="quform-label-text"
-                                                                        for="quform_1_3_5d0a66">
-                                                                        Istifadəçi adı<span
-                                                                            class="quform-required">*</span>
-                                                                    </label>
-                                                                </div>
-                                                                <div
-                                                                    class="quform-inner quform-inner-text quform-inner-1_3">
-                                                                    <div
-                                                                        class="quform-input quform-input-text quform-input-1_3 quform-cf">
-                                                                        <input type="text" id="quform_1_3_5d0a66"
-                                                                            name="quform_1_3"
-                                                                            class="quform-field quform-field-text quform-field-1_3">
-                                                                    </div>
-                                                                    <!-- <div class="quform-error quform-cf"
-                                                              style="display: block;">
-                                                              <div class="quform-error-inner"><span
-                                                                      class="quform-error-text"></span></div>
-                                                          </div> -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="quform-element quform-element-text quform-element-1_4 quform-cf quform-element-required">
-                                                            <div class="quform-spacer">
-                                                                <div class="quform-label quform-label-1_4">
-                                                                    <label class="quform-label-text"
-                                                                        for="quform_1_4_5d0a66">
-                                                                        Şifrə<span class="quform-required">*</span>
-                                                                    </label>
-                                                                </div>
-                                                                <div
-                                                                    class="quform-inner quform-inner-text quform-inner-1_4">
-                                                                    <div class="quform-input quform-input-text
-                                                          quform-input-1_4 quform-cf">
-                                                                        <input type="text" id="quform_1_4_5d0a66"
-                                                                            name="quform_1_4"
-                                                                            class="quform-field quform-field-text quform-field-1_4">
-                                                                    </div>
-                                                                    <!-- <div class="quform-error quform-cf"
-                                                              style="display: block;">
-                                                              <div class="quform-error-inner"><span
-                                                                      class="quform-error-text"></span></div>
-                                                          </div> -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="quform-element quform-element-checkbox quform-element-1_5 quform-cf quform-element-optional">
-                                                            <div class="quform-spacer">
-                                                                <div
-                                                                    class="quform-inner quform-inner-checkbox quform-inner-1_5">
-                                                                    <div
-                                                                        class="quform-input quform-input-checkbox quform-input-1_5 quform-cf">
-                                                                        <div
-                                                                            class="quform-options quform-cf quform-options-block quform-options-simple">
-                                                                            <div class="quform-option">
-                                                                                <input type="checkbox"
-                                                                                    name="quform_1_5[]"
-                                                                                    id="quform_1_5_5d0a66_4"
-                                                                                    class="quform-field quform-field-checkbox quform-field-1_5 quform-field-1_5_4"
-                                                                                    value="Məni unutma"><label
-                                                                                    for="quform_1_5_5d0a66_4"
-                                                                                    class="quform-option-label quform-option-label-1_5_4">
-                                                                                    <span class="quform-option-text">
-                                                                                        Məni
-                                                                                        unutma
-                                                                                    </span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="quform-element quform-element-submit quform-element-1_2 quform-cf quform-button-style-bootstrap quform-button-width-full">
-                                                            <div
-                                                                class="quform-button-submit quform-button-submit-default quform-button-submit-1_2 quform-button-icon-right">
-                                                                <button name="quform_submit" type="submit"
-                                                                    class="quform-submit" value="submit">
-                                                                    <span
-                                                                        class="quform-button-text quform-button-submit-text">
-                                                                        DAXİL
-                                                                        OL
-                                                                    </span><span
-                                                                        class="quform-button-icon quform-button-submit-icon">
-                                                                        <i class="fa fa-chevron-right"></i>
-                                                                    </span>
-                                                                </button>
-                                                            </div>
-                                                            <div
-                                                                class="quform-loading quform-loading-position-left quform-loading-type-spinner-1">
-                                                                <div class="quform-loading-inner">
-                                                                    <div class="quform-loading-spinner">
-                                                                        <div class="quform-loading-spinner-inner"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="quform-element-tree">
-                                                            <label for="quform_1_0_5d0a66">
-                                                                This
-                                                                field should be left blank
-                                                            </label><input type="text" id="quform_1_0_5d0a66"
-                                                                name="quform_1_0"
-                                                                class="quform-field quform-field-tree quform-field-1_0"
-                                                                tabindex="-1" autocomplete="off">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-column is-layout-flow" style="flex-basis:25%"></div>
-                        </div>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Modal User
 <div class="modal-body">
   <div class="row" id="accordion">
@@ -1135,9 +1064,12 @@
 </div> -->
 
 
+
+
+
     </main>
 
-    <script>
+    <!-- <script>
         function calculateBoxPosition() {
             var screenWidth = window.innerWidth;
             var screenHeight = window.innerHeight;
@@ -1153,7 +1085,7 @@
 
         window.addEventListener('DOMContentLoaded', calculateBoxPosition);
         window.addEventListener('resize', calculateBoxPosition);
-    </script>
+    </script> -->
 
     <!-- <script>
         function calculateBoxPositions() {
@@ -1198,7 +1130,7 @@
         var descList = document.querySelectorAll('.boxDesc');
 
         var currentSlide = 0;
-        var slideInterval = setInterval(nextSlide, 5000); // 5 saniyede bir otomatik geçiş
+        var slideInterval = setInterval(nextSlide, 150000); // 15 saniyede bir otomatik geçiş
         var descInterval;
 
         function nextSlide() {
@@ -1242,7 +1174,7 @@
             });
 
             kutu.addEventListener('mouseout', function () {
-                slideInterval = setInterval(nextSlide, 5000);
+                slideInterval = setInterval(nextSlide, 500000);
             });
         });
 
@@ -1260,7 +1192,6 @@
     </script>
 
 
-
     <footer></footer>
 
     <!-- @*Bootstrap  *@ -->
@@ -1274,7 +1205,19 @@
         </script>
     <!-- @*jquery cdn  *@ -->
 
+
+    <script>
+        $('#openModal2').click(function (e) {
+            $('#projectsModalScrollable').addClass("show");
+            e.preventDefault();
+        });
+        $("#close-first").click(function () {
+            $('#projectsModalScrollable').removeClass("show");
+        })
+    </script>
     <script src="./assets/js/localitaztion.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/sliderInfo.js"></script>
 </body>
 
 </html>
