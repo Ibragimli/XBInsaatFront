@@ -2,39 +2,33 @@
 
     .modal-dialog {
         .modal-content {
-            .modal-header {
-                h2 {}
-
-                button {
-                    i {}
-                }
-            }
 
             .modal-body {
-               
-            
-                section{
-                    .container{
-                        .row{
-                            a{
-                                color: #2083fe;
-                                background-color: #e4f0ff;
-                                transform: scale(1);
-                                transition: transform 0.4s;
-                                text-transform: uppercase !important;
-                                font-weight: 400 !important;
-                                letter-spacing: 2px !important;
-                                font-size: 24ox !important;
-                                padding: 0.4rem 1.1rem;
-                                line-height: 1.5;
-                                i {
-                                    margin-right: 7px;
-                                    font-size: .875em;
+                section {
+                    .container {
+                        .row {
+
+                            .camBox {
+                                padding-right: 28px;
+                                margin-bottom: 25px;
+
+                                a {
+                                    img {
+                                        transition: all 0.4s;
+                                        transform: scale(1);
+                                    }
                                 }
+
                             }
-                            a:hover{
-                                transform: translateY(-6px);
-                                background-color: #c1dcff;
+
+                            .camBox:hover {
+                                a {
+                                    img {
+                                        transform: translateY(-10px);
+
+
+                                    }
+                                }
                             }
                         }
                     }

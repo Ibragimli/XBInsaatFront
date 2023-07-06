@@ -1,16 +1,16 @@
-.projectInfoModal {
+.newModal {
     .modal-dialog {
         .modal-content {
             .modal-body {
                 section {
                     .container {
                         .row {
-                            .projectInfoSliders {
+                            .newSliders {
                                 position: relative;
                                 width: 100%;
                                 overflow: hidden;
 
-                                .projectInfoSlide {
+                                .newSlide {
                                     width: 100%;
                                     height: auto;
                                     display: none;
@@ -36,16 +36,12 @@
                                     }
                                 }
 
+                               
                             }
-
-
                         }
-
-
                     }
                 }
             }
         }
     }
-
 }

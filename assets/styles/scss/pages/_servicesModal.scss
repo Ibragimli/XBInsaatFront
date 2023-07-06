@@ -1,11 +1,8 @@
 #servicesModalScrollable {
-    top: 8%  !important;
-
     .modal-dialog {
         .modal-content {
 
             .modal-body {
-                padding-bottom: 120px !important;
 
                 .row {
                     .servicesBox {
@@ -27,25 +24,9 @@
                         }
                     }
 
-                    .boxPadding {
-                        border-right: 1px solid;
-                        border-left: 1px solid;
-                    }
+                   
 
-                    .iceri {
-                        padding-left: 2em;
-                        padding-right: 2em;
-                    }
-
-                    .leftP {
-                        padding-left: 2.5em;
-
-                    }
-
-                    .rightP {
-                        padding-right: 2.5em;
-
-                    }
+                   
                 }
             }
         }

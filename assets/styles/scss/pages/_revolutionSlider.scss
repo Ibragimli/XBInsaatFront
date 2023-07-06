@@ -1,11 +1,9 @@
-main {
-  position: relative;
-}
 
 .slider {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  transition: all 0.8s;
 
   .slide {
     position: absolute;
@@ -14,14 +12,16 @@ main {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: all 0.8s;
 
-    &.active {
+    &.revoActive {
+      transition: all 0.8s;
       opacity: 1;
     }
-    img{
-      width: 100%!important;
-      height: 100%!important;
+
+    img {
+      width: 100% !important;
+      height: 100% !important;
       object-fit: cover;
       pointer-events: none;
     }
@@ -29,248 +29,5 @@ main {
 }
 
 
-#sliderBoxs {
-
-  .sliderRangeBox {
-    position: absolute;
-    top: 0;
-    left: calc((100vw - 100vw * 0.600));
-    transition: all 0.4s;
-
-    .revolutionSliderclass {
 
 
-      .kutus {
-        .kutu {
-          a {
-
-            .kutuFeature {
-              width: 218px;
-              height: 218px;
-              display: flex;
-              align-items: end;
-              padding: 0px 0px 12px 12px;
-              line-height: 21px;
-              transition: all 0.4s;
-
-              span {
-                font-weight: bold;
-                font-size: 21px;
-              }
-            }
-          }
-        }
-
-        // .generalKutu{
-        //   position: absolute;
-        //   top: 0;
-        //   // left: 635px;
-        //   left: calc((100vw - 100vw * 0.603));
-
-        // }
-
-        .kutu:hover .slide {
-          opacity: 1;
-        }
-      }
-    }
-  }
-
-}
-
-
-#boxDesctipions {
-  z-index: 20;
-  position: absolute;
-  top: 290px;
-  // left: 400px;
-  left: calc((100vw - 100vw * 0.745));
-  transition: all 0.4s;
-
-  .row {
-    .boxDesc {
-      width: 200px !important;
-      display: none;
-
-      h2 {
-        z-index: 5;
-        text-decoration: none;
-        white-space: nowrap;
-        line-height: 70px;
-        letter-spacing: 2px;
-        font-weight: 550;
-        font-size: 63px;
-      }
-
-      p {
-        z-index: 6;
-        text-decoration: none;
-        white-space: nowrap;
-        line-height: 21px;
-        letter-spacing: 0px;
-        font-weight: 400;
-        font-size: 17px;
-        transform: translate(0px, 0px);
-      }
-
-      .boxDescButton {
-        z-index: 7;
-        margin-top: 30px;
-
-        a {
-          padding: 12px 18px 12px 18px;
-
-          color: rgb(255, 255, 255);
-          text-align: left;
-          line-height: 24px;
-          letter-spacing: 0px;
-          font-weight: 700;
-          font-size: 17px;
-          transition: all 0.4s;
-        }
-
-        a:hover {
-          padding: 11px 15px 11px 15px;
-          opacity: 0.9;
-        }
-      }
-
-    }
-
-    .active {
-      display: block;
-    }
-  }
-}
-
-@media only screen and (max-width: 1346px) {
-
-  #sliderBoxs {
-
-    .sliderRangeBox {
-      left: calc((100vw - 100vw * 0.670)) !important;
-
-      .revolutionSliderclass {
-        .kutus {
-          .kutu {
-            a {
-
-              .kutuFeature {
-
-                transition: all 0.4s;
-              }
-            }
-          }
-        }
-      }
-    }
-
-  }
-
-  #boxDesctipions {
-    left: calc((100vw - 100vw * 0.845));
-
-    .row {
-      .boxDesc {
-
-        h2 {
-          font-size: 59px;
-        }
-
-        p {
-          font-size: 16px;
-        }
-
-        .boxDescButton {
-          a {
-            padding: 10px 16px 10px 16px;
-            font-size: 17px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1180px) {
-
-  #sliderBoxs {
-    .sliderRangeBox {
-      left: calc((100vw - 100vw * 0.715)) !important;
-
-      .revolutionSliderclass {
-        .kutus {
-          .kutu {
-            a {
-
-              .kutuFeature {
-                width: 201px !important;
-                height: 201px !important;
-              }
-            }
-          }
-        }
-      }
-    }
-
-  }
-
-  #boxDesctipions {
-
-    .row {
-      .boxDesc {
-
-        h2 {
-          font-size: 56px;
-        }
-
-        p {
-          font-size: 16px;
-        }
-
-        .boxDescButton {
-          z-index: 7;
-          margin-top: 30px;
-
-          a {
-            padding: 10px 16px 10px 16px;
-            font-size: 17px;
-          }
-
-
-        }
-
-      }
-    }
-  }
-}
-
-@media (max-height: 700px) {
-  #sliderBoxs {
-    .sliderRangeBox {
-      .revolutionSliderclass {
-        .kutus {
-          .kutu {
-            a {
-              .kutuFeature {
-                width: 200px !important;
-                height: 200px !important;
-
-                span {}
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-
-@media (min-height: 800px) {
-  #sliderBoxs {
-    .sliderRangeBox {
-      top: 38px !important;
-    }
-  }
-}

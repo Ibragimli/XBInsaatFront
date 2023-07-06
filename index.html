@@ -21,6 +21,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Xarı Bülbül Group</title>
     <link rel="stylesheet" href="./assets/styles/css/revo.css">
+
+    <!-- owlCarousel -->
+    <link rel="stylesheet" href="./assets/styles/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/styles/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -41,6 +49,7 @@
                 <div class="headRight ">
                     <div class="headLoginLangueage">
                         <div class="headLogin">
+                            <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#loginModalScrollable"> -->
                             <a href="#" data-bs-toggle="modal" data-bs-target="#loginModalScrollable">
                                 <img class="userImage" src="./assets/Images/user.png" alt="">
                                 <img class="userWhiteImage" src="./assets/Images/user-white.png" alt="">
@@ -71,42 +80,262 @@
     </header>
 
     <main>
-
+        <!-- Contact Us Button -->
+        <div class="contactUsBtnBox " id="hereket">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#contactUsModal" id="ctnBtn"><i
+                    class="fa-solid fa-phone-volume "></i></a>
+        </div>
 
         <!-- Revo Slider -->
         <div class="slider">
             <div class="slide active">
-                <img src="./assets/Images/cam.png" alt="Resim 1">
+                <img src="./assets/Images/slide-susa.gif" alt="Resim 1">
             </div>
             <div class="slide">
-                <img src="./assets/Images/cam.png" alt="Resim 2">
+                <img src="./assets/Images/slide-service3-scaled.gif" alt="Resim 2">
             </div>
             <div class="slide">
-                <img src="./assets/Images/slide-service3-scaled.gif" alt="Resim 3">
+                <img src="./assets/Images/slide-projec-yujk-scaled.gif" alt="Resim 3">
             </div>
             <div class="slide">
-                <img src="./assets/Images/slide-projec-yujk-scaled.gif" alt="Resim 4">
+                <img src="./assets/Images/home_architect2_slider2-1568x653.jpg" alt="Resim 4">
             </div>
             <div class="slide">
-                <img src="./assets/Images/home_architect2_slider3-1568x653.jpg" alt="Resim 5">
+                <img src="./assets/Images/cam.png" alt="Resim 5">
             </div>
             <div class="slide">
-                <img src="./assets/Images/home_architect2_slider2-1568x653.jpg" alt="Resim 6">
+                <img src="./assets/Images/home_architect2_slider3-1568x653.jpg" alt="Resim 6">
             </div>
         </div>
 
-        <!-- Boxs -->
-        <section id="sliderBoxs">
-            <div class=" sliderRangeBox">
-                <div class=" revolutionSliderclass " style="display: flex; justify-content: end; ">
-                    <div class="kutus d-flex">
-                        <div class="kutu generalKutu">
+        <!-- XBInsaat Web Size -->
+        <div class="xbinsaat-web">
+            <!-- Boxs -->
+            <section id="sliderBoxs">
+                <div class=" sliderRangeBox">
+                    <div class=" revolutionSliderclass " style="display: flex; justify-content: end; ">
+                        <div class="kutus d-flex">
+                            <div class="kutu generalKutu">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#generalModalScrollable">
+                                    <div class="kutuFeature" style="background-color: #000;" onmouseover="showSlide(0)">
+                                        <span style="color: white;">General</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="kutu servicesKutu">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#servicesModalScrollable">
+                                    <div class="kutuFeature" style="background-color: #fff;" onmouseover="showSlide(1)">
+                                        <span style="color: black;">Services</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="kutu projectsKutu">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#projectsModalScrollable">
+                                    <div class="kutuFeature" style="background-color: #00A7C6;"
+                                        onmouseover="showSlide(2)">
+                                        <span style="color: white;">Projects</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class=" revolutionSliderclass " style="display: flex; justify-content: end; ">
+                        <div class="kutus d-flex ">
+                            <div class="kutu newsKutu">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#newsModalScrollable">
+                                    <div class="kutuFeature" style="background-color: #576676;"
+                                        onmouseover="showSlide(3)">
+                                        <span style="color: white;">News</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="kutu camKutu">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#camsModalScrollable">
+                                    <div class="kutuFeature" style="background-color: #fff;" onmouseover="showSlide(4)">
+                                        <span style="color: black;">CAM</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" revolutionSliderclass ">
+                        <div class="kutus  d-flex justify-content-end">
+                            <div class="kutu contactusKutu">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#contactModalScrollable">
+                                    <div class="kutuFeature" style="background-color: #000;" onmouseover="showSlide(5)">
+                                        <span style="color: white;">Contact us</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Description -->
+            <section id="boxDesctipions">
+                <div class="row">
+                    <div class="boxDesc active col-lg-3">
+                        <h2 style="color: #000;">General</h2>
+                        <p style="color: #000;">
+                            Müasir dövürdə rəqabət mühitinə
+                            <br>
+                            tab gətirmək üçün şirkətlər öz brend
+                            <br>
+                            simalarını formalaşdırmağa çox böyük
+                            <br>
+                            önəm verirlər. Düzgün brend strategiyasının
+                            <br>
+                            məhsulun və xidmətin realizə olunmasında
+                            <br>
+                            rolu kifayət qədər böyükdür.
+                            <br>
+                        </p>
+
+                        <div class="boxDescButton">
+                            <a data-bs-toggle="modal" data-bs-target="#generalModalScrollable"
+                                style="background-color: #000;" href="#">Daxil ol</a>
+                        </div>
+                    </div>
+                    <div class="boxDesc col-lg-3">
+                        <h2 style="color: rgb(148, 83, 84);">Services</h2>
+                        <p style="color: rgb(148, 83, 84);">
+                            Müasir dövürdə rəqabət mühitinə
+                            <br>
+                            tab gətirmək üçün şirkətlər öz brend
+                            <br>
+                            simalarını formalaşdırmağa çox böyük
+                            <br>
+                            önəm verirlər. Düzgün brend strategiyasının
+                            <br>
+                            məhsulun və xidmətin realizə olunmasında
+                            <br>
+                            rolu kifayət qədər böyükdür.
+                            <br>
+                        </p>
+
+                        <div class="boxDescButton">
+
+                            <a data-bs-toggle="modal" data-bs-target="#servicesModalScrollable"
+                                style="background-color: rgb(148, 83, 84);" href="#">Daxil ol</a>
+
+                        </div>
+                    </div>
+                    <div class="boxDesc col-lg-3">
+                        <h2 style="color: rgb(96, 141, 155);">Projects</h2>
+                        <p style="color: rgb(96, 141, 155);">
+                            Müasir dövürdə rəqabət mühitinə
+                            <br>
+                            tab gətirmək üçün şirkətlər öz brend
+                            <br>
+                            simalarını formalaşdırmağa çox böyük
+                            <br>
+                            önəm verirlər. Düzgün brend strategiyasının
+                            <br>
+                            məhsulun və xidmətin realizə olunmasında
+                            <br>
+                            rolu kifayət qədər böyükdür.
+                            <br>
+                        </p>
+
+                        <div class="boxDescButton">
+                            <a data-bs-toggle="modal" data-bs-target="#projectsModalScrollable"
+                                style="background-color:rgb(87, 102, 118);" href="#">Daxil ol</a>
+                        </div>
+                    </div>
+                    <div class="boxDesc col-lg-3">
+                        <h2 style="color: rgb(87, 102, 118);">News</h2>
+                        <p style="color: rgb(87, 102, 118);">
+                            Müasir dövürdə rəqabət mühitinə
+                            <br>
+                            tab gətirmək üçün şirkətlər öz brend
+                            <br>
+                            simalarını formalaşdırmağa çox böyük
+                            <br>
+                            önəm verirlər. Düzgün brend strategiyasının
+                            <br>
+                            məhsulun və xidmətin realizə olunmasında
+                            <br>
+                            rolu kifayət qədər böyükdür.
+                            <br>
+                        </p>
+
+                        <div class="boxDescButton">
+                            <a data-bs-toggle="modal" data-bs-target="#newsModalScrollable"
+                                style="background-color:    rgb(87, 102, 118);" href="#">Daxil ol</a>
+
+                        </div>
+                    </div>
+                    <div class="boxDesc col-lg-3">
+                        <h2 style="color: #86988E;">CAM</h2>
+                        <p style="color: #86988E;">
+                            Müasir dövürdə rəqabət mühitinə
+                            <br>
+                            tab gətirmək üçün şirkətlər öz brend
+                            <br>
+                            simalarını formalaşdırmağa çox böyük
+                            <br>
+                            önəm verirlər. Düzgün brend strategiyasının
+                            <br>
+                            məhsulun və xidmətin realizə olunmasında
+                            <br>
+                            rolu kifayət qədər böyükdür.
+                            <br>
+                        </p>
+
+                        <div class="boxDescButton">
+
+                            <a data-bs-toggle="modal" data-bs-target="#camsModalScrollable"
+                                style="background-color: #86988E;" href="#">Daxil ol</a>
+
+                        </div>
+                    </div>
+                    <div class="boxDesc col-lg-3">
+                        <h2 style="color: #BFB256;">Contact Us</h2>
+                        <p style="color: #BFB256;">
+                            Müasir dövürdə rəqabət mühitinə
+                            <br>
+                            tab gətirmək üçün şirkətlər öz brend
+                            <br>
+                            simalarını formalaşdırmağa çox böyük
+                            <br>
+                            önəm verirlər. Düzgün brend strategiyasının
+                            <br>
+                            məhsulun və xidmətin realizə olunmasında
+                            <br>
+                            rolu kifayət qədər böyükdür.
+                            <br>
+                        </p>
+
+                        <div class="boxDescButton">
+                            <a data-bs-toggle="modal" data-bs-target="#contactModalScrollable"
+                                style="background-color: #BFB256;" href="#">Daxil ol</a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- XBInsaat Mobile Size -->
+        <div class="xbinsaat-mobile">
+            <!-- Boxs -->
+            <section id="sliderMobileBoxs">
+                <div class="kutus row">
+                    <div class="col-5">
+                        <div class="kutu generalKutu d-flex justify-content-end">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#generalModalScrollable">
                                 <div class="kutuFeature" style="background-color: #000;" onmouseover="showSlide(0)">
                                     <span style="color: white;">General</span>
                                 </div>
                             </a>
                         </div>
+                    </div>
+                    <div class="col-5">
                         <div class="kutu servicesKutu">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#servicesModalScrollable">
                                 <div class="kutuFeature" style="background-color: #fff;" onmouseover="showSlide(1)">
@@ -114,27 +343,27 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="kutu projectsKutu">
+                    </div>
+                    <div class="col-5">
+                        <div class="kutu newsKutu d-flex justify-content-end ">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#newsModalScrollable">
+                                <div class="kutuFeature" style="background-color: #575575;" onmouseover="showSlide(3)">
+                                    <span style="color: white;">News</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="kutu projectsKutu ">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#projectsModalScrollable">
-                                <div class="kutuFeature" style="background-color: #00A7C6;" onmouseover="showSlide(2)">
+                                <div class="kutuFeature" style="background-color: #00A7C5;" onmouseover="showSlide(2)">
                                     <span style="color: white;">Projects</span>
                                 </div>
                             </a>
                         </div>
                     </div>
-
-                </div>
-
-                <div class=" revolutionSliderclass " style="display: flex; justify-content: end; ">
-                    <div class="kutus d-flex ">
-                        <div class="kutu newsKutu">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#newsModalScrollable">
-                                <div class="kutuFeature" style="background-color: #576676;" onmouseover="showSlide(3)">
-                                    <span style="color: white;">News</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="kutu camKutu">
+                    <div class="col-5">
+                        <div class="kutu camKutu d-flex justify-content-end">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#camsModalScrollable">
                                 <div class="kutuFeature" style="background-color: #fff;" onmouseover="showSlide(4)">
                                     <span style="color: black;">CAM</span>
@@ -142,9 +371,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class=" revolutionSliderclass ">
-                    <div class="kutus  d-flex justify-content-end">
+                    <div class="col-5">
                         <div class="kutu contactusKutu">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#contactModalScrollable">
                                 <div class="kutuFeature" style="background-color: #000;" onmouseover="showSlide(5)">
@@ -154,147 +381,992 @@
                         </div>
                     </div>
                 </div>
+            </section>
+        </div>
+
+        <!-- General Modal -->
+        <div class="modal fade" id="generalModalScrollable" tabindex="-1" aria-labelledby="generalModalScrollable"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg  modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="generalModalScrollableLabel">General</h2>
+                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        “Xarıbülbül İnşaat” MMC Azərbaycanda yüksək keyfiyyətli tikinti layihələrinin ölkə
+                        ərazisində həyata keçirilməsini təmin edən aparıcı tikinti şirkətidir. Şirkətimiz böyük və
+                        mürəkkəb
+                        layihələri həyata keçirməklə, innovasiyaları təştiq etməklə, müasir texnologiyaları
+                        mənimsəməklə, müştərilərilərimiz üçün fərq yaratmaqla tanınıb. “Xarıbülbül İnşaat”-da yüksək
+                        keyfiyyətli materiallardan istifadə edərək, ixtisaslı mühəndis kadrları cəlb etməklə istənilən
+                        çətinlik səviyyəsində layihələndirmə, tədqiqat, tikinti, quraşdırma və təmir-tikinti işlərinini
+                        təqdim
+                        edir. “Xarıbülbül İnşaat”-da biz yaşayış binalarından ticarət komplekslərinə, zavodlara,
+                        fabriklərə
+                        və infrastruktur inkişaflarına qədər müxtəlif layihələrin tikintisində ixtisaslaşmışıq.
+                        Təcrübəli
+                        peşəkarlardan ibarət komandamız müxtəlif layihələri həyata keçirməyə imkan verən qlobal
+                        standardlara uyğun və zəngin təcrübəyə malikdir.
+
+                    </div>
+
+                </div>
             </div>
-        </section>
+        </div>
 
-
-        <!-- Description -->
-        <section id="boxDesctipions">
-            <div class="row">
-                <div class="boxDesc active col-lg-3">
-                    <h2 style="color: #000;">General</h2>
-                    <p style="color: #000;">
-                        Müasir dövürdə rəqabət mühitinə
-                        <br>
-                        tab gətirmək üçün şirkətlər öz brend
-                        <br>
-                        simalarını formalaşdırmağa çox böyük
-                        <br>
-                        önəm verirlər. Düzgün brend strategiyasının
-                        <br>
-                        məhsulun və xidmətin realizə olunmasında
-                        <br>
-                        rolu kifayət qədər böyükdür.
-                        <br>
-                    </p>
-
-                    <div class="boxDescButton">
-                        <a style="background-color: #000;" href="#">Daxil ol</a>
+        <!-- Services Modal -->
+        <div class="modal fade" id="servicesModalScrollable" tabindex="-1" aria-labelledby="servicesModalScrollable"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg  modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="servicesModalScrollableLabel">Services</h2>
+                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
                     </div>
-                </div>
-                <div class="boxDesc col-lg-3">
-                    <h2>Services</h2>
-                    <p style="color: #000;">
-                        Müasir dövürdə rəqabət mühitinə
-                        <br>
-                        tab gətirmək üçün şirkətlər öz brend
-                        <br>
-                        simalarını formalaşdırmağa çox böyük
-                        <br>
-                        önəm verirlər. Düzgün brend strategiyasının
-                        <br>
-                        məhsulun və xidmətin realizə olunmasında
-                        <br>
-                        rolu kifayət qədər böyükdür.
-                        <br>
-                    </p>
-
-                    <div class="boxDescButton">
-
-                        <a style="background-color: rgb(148, 83, 84);" href="#">Daxil ol</a>
-
-                    </div>
-                </div>
-                <div class="boxDesc col-lg-3">
-                    <h2>Projects</h2>
-                    <p style="color: #000;">
-                        Müasir dövürdə rəqabət mühitinə
-                        <br>
-                        tab gətirmək üçün şirkətlər öz brend
-                        <br>
-                        simalarını formalaşdırmağa çox böyük
-                        <br>
-                        önəm verirlər. Düzgün brend strategiyasının
-                        <br>
-                        məhsulun və xidmətin realizə olunmasında
-                        <br>
-                        rolu kifayət qədər böyükdür.
-                        <br>
-                    </p>
-
-                    <div class="boxDescButton">
-                        <a style="background-color:    rgb(87, 102, 118);" href="#">Daxil ol</a>
-                    </div>
-                </div>
-                <div class="boxDesc col-lg-3">
-                    <h2>News</h2>
-                    <p style="color: #000;">
-                        Müasir dövürdə rəqabət mühitinə
-                        <br>
-                        tab gətirmək üçün şirkətlər öz brend
-                        <br>
-                        simalarını formalaşdırmağa çox böyük
-                        <br>
-                        önəm verirlər. Düzgün brend strategiyasının
-                        <br>
-                        məhsulun və xidmətin realizə olunmasında
-                        <br>
-                        rolu kifayət qədər böyükdür.
-                        <br>
-                    </p>
-
-                    <div class="boxDescButton">
-                        <a style="background-color:    rgb(87, 102, 118);" href="#">Daxil ol</a>
-
-                    </div>
-                </div>
-                <div class="boxDesc col-lg-3">
-                    <h2>CAM</h2>
-                    <p style="color: #000;">
-                        Müasir dövürdə rəqabət mühitinə
-                        <br>
-                        tab gətirmək üçün şirkətlər öz brend
-                        <br>
-                        simalarını formalaşdırmağa çox böyük
-                        <br>
-                        önəm verirlər. Düzgün brend strategiyasının
-                        <br>
-                        məhsulun və xidmətin realizə olunmasında
-                        <br>
-                        rolu kifayət qədər böyükdür.
-                        <br>
-                    </p>
-
-                    <div class="boxDescButton">
-
-                        <a style="background-color: #86988E;" href="#">Daxil ol</a>
-
-                    </div>
-                </div>
-                <div class="boxDesc col-lg-3">
-                    <h2>Contact Us</h2>
-                    <p style="color: #000;">
-                        Müasir dövürdə rəqabət mühitinə
-                        <br>
-                        tab gətirmək üçün şirkətlər öz brend
-                        <br>
-                        simalarını formalaşdırmağa çox böyük
-                        <br>
-                        önəm verirlər. Düzgün brend strategiyasının
-                        <br>
-                        məhsulun və xidmətin realizə olunmasında
-                        <br>
-                        rolu kifayət qədər böyükdür.
-                        <br>
-                    </p>
-
-                    <div class="boxDescButton">
-                        <a style="background-color: #BFB256;" href="#">Daxil ol</a>
-
+                    <div class="modal-body">
+                        <div class="row justify-content-center">
+                            <!-- <div class="col-lg-4 col-md-11 servicesBox rightP ">
+                                <h2>Memarlıq</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit sollicitudin
+                                    ipsum a consectetur. Suspendisse potenti. Donec in mauris ullamcorper, semper est
+                                    non, tristique nisi. Curabitur placerat eros felis, a porta ipsum sodales interdum.
+                                    Aliquam ac orci nibh. Aenean sit amet interdum enim. Aenean ornare libero ante, sed
+                                    sollicitudin tellus placerat vel. Integer auctor lacus pulvinar velit tincidunt
+                                    tempus. Morbi aliquam malesuada quam. Proin quis magna et nunc pulvinar commodo.</p>
+                                <div class="servicesModalImage">
+                                    <img style="width: 32px; height: 66px;" src="./assets/Images/icon1.png" alt="">
+                                </div>
+                            </div> -->
+                            <div class="col-lg-6  col-md-11 servicesBox boxPadding iceri">
+                                <h2>Layihələndirmə</h2>
+                                <p>
+                                    Tikinti işlərinin layihələndirilməsi hər bir tikinti prosesinin vacib hissəsidir.
+                                    Bu, işin həcmini,
+                                    tələb olunan resurslarını, ümumi layihə müddətinin planlaşdırılmasını,
+                                    layihələndirilməsini və
+                                    qiymətləndirilməsini təşkil edir. Layihənin uğurlu icrasını təmin etmək və riskləri
+                                    aşağı endirmək
+                                    üçün layihənin düzgün planlaşdırılması mühüm əhəmiyyət kəsb edir, beləliklə,
+                                    “Xarıbülbül
+                                    İnşaat”-da komandamız işin düzgün və real həyata keçirilməsi prosesini davam
+                                    etdirir.
+                                    Layihələndirmənin ilk addımı - layihənin başlanmasıdır. Bu, istər yeni bina, istər
+                                    infrastrukturun
+                                    inkişafı və ya təmiri olsun, tikinti layihəsinə ehtiyacın müəyyən edilməsini əhatə
+                                    edir. Layihə
+                                    təsdiq edildikdən sonra əhatə dairəsini müəyyənləşdirməyə davam edirik. Layihənin
+                                    tələblərini,
+                                    məqsədlərini və məhdudiyyətlərini başa düşməklə heyata keçiririk. Konseptual dizayn
+                                    təsdiq
+                                    edildikdən sonra ətraflı dizayn işləri ilə davam edirik. Bu, konsepsiyanın
+                                    hərtərəfli tikinti
+                                    çertyojlarına və spesifikasiyalara çevrilməsini nəzərdə tutur. Memarlar, struktur
+                                    mühəndisləri,
+                                    elektrik mühəndisləri və digər mütəxəssislər hesablamalar, elektrik və santexnika
+                                    sistemləri,
+                                    HVAC və digər vacib elementlər daxil olmaqla birlikdə işləyirlər.
+                                </p>
+                                <div class="servicesModalImage">
+                                    <img style="width: 53px; height: 46px;" src="./assets/Images/icon2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6  col-md-11 servicesBox leftP ">
+                                <h2>İnşaat</h2>
+                                <p>
+                                    “Xarıbülbül İnşaat” MMC . ticarət mərkəzləri və kommersiya binalarının tikintisində
+                                    ixtisaslaşan tanınmış tikinti şirkətidir . Bu sektorda zəngin biliklərə və təcrübəyə
+                                    malik olan
+                                    şirkətimiz yüksək keyfiyyətli və səmərəli tikinti həlləri axtaran müştərilər üçün
+                                    etibarlı tərəfdaş
+                                    kimi özünü təsdiq etmişdir. Peşəkar mütəxəssislərdən ibarət olan komandamız
+                                    vətəndaşların
+                                    axınını optimallaşdıran, geniş pərakəndə satış sahəsini təmin edən və cəlbedici
+                                    estetikanı
+                                    özündə birləşdirən ticarət mərkəzlərinin layihələndirilməsi, tikintisi üçün
+                                    müştərilər və memarlarla
+                                    sıx əməkdaşlıq edir. “Xarıbülbül İnşaat”MMC xidmətləri ticarət mərkəzinin
+                                    tikintisinin bütün
+                                    sahələrini əhatə edir. Komandamız ilkin planlaşdırma və dizayn mərhələsindən
+                                    interyerin son
+                                    toxunuşlarına qədər layihənin təfərrüatlarına ciddi diqqət yetirməklə fərqlənir.
+                                    “Xarıbülbül İnşaat”
+                                    MMC müxtəlif tipli kommersiya binalarının, o cümlədən ofis komplekslərinin,
+                                    fabriklərin və
+                                    qarışıq tipli binaların tikintisinə üstünlük verir. Biz hər bir kommersiya
+                                    layihəsinin fərqli tələblərini
+                                    nəzərə alıb, büdcə məhdudiyyətlərinə uyğunlaşıb vaxt qrafiklərinə riayət etməklə,
+                                    onların
+                                    baxışlarının həyata keçirilməsini təmin edirik.
+                                </p>
+                                <div class="servicesModalImage ">
+                                    <img style="width: 70px; height: 35px;" src="./assets/Images/icon3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Modal Projects -->
+        <div class="modal fade" id="projectsModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="projectsModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="projectsModalScrollableTitle">All Projects
+                        </h2>
+                        <button type="button" id="close-first" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row mt-4">
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-10 mb-2 projectBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
+                                            <img src="./assets/Images/home_architect2_slider2-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Qala Shopping Village
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-10 mb-2 projectBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
+                                            <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Grand Mall
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-10 mb-2 projectBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
+                                            <img src="./assets/Images/home_architect2_slider2-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Qala Shopping Village
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-10 mb-2 projectBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
+                                            <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Grand Mall
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-10 mb-2 projectBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
+                                            <img src="./assets/Images/home_architect2_slider2-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Qala Shopping Village
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-10 mb-2 projectBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test">
+                                            <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Grand Mall
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
+                                            data-bs-target="#project-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Go to previous posts -->
+                                <a href="#" id="close-first" data-bs-dismiss="modal" aria-label="Close"
+                                    class="projectBackBtn btn btn-pastel-primary hover-lift-light text-uppercase-bold-sm mt-4">
+                                    <i class="fas fa-chevron-left fa-sm mr-2"></i>
+                                    Ana səhİfəyə qayıt
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Project -->
+        <div class="modal fade  projectModal" id="project-test" tabindex="-1" role="dialog"
+            aria-labelledby="project-testTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="project-testTitle"> Qala Shopping Village
+                        </h2>
+                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row mt-4 justify-content-center ">
+                                    <!-- Post -->
+
+                                    <!-- Featured image -->
+                                    <div class="col-md-9 col-sm-11 mb-2 ">
+                                        <div class="projectSliders">
+                                            <div class="projectSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="projectSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/slide-susa.gif"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="projectSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>>
+                                                </div>
+                                            </div>
+                                            <a class="prev-project-btn prev-btn" href="#">&lt;</a>
+                                            <a class="next-project-btn next-btn " href="#">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <!-- Title -->
+
+                                    <div class="col-md-9 mb-2">
+                                        <h1 class="h5 d-block text-dark text-decoration-none mt-4">
+                                            Gravida ullamcorper
+                                        </h1>
+                                    </div>
+                                    <!-- Read more -->
+                                    <div class="col-md-9 mb-2">
+                                        <p class="d-inline-block  mt-2 ">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur
+                                            dolorem, eos at iste mollitia dolore labore odio? Dolorum temporibus vel
+                                            architecto animi? Blanditiis, unde! Aspernatur ipsa laboriosam aut deserunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur
+                                            dolorem, eos at iste mollitia dolore labore odio? Dolorum temporibus vel
+                                            architecto animi? Blanditiis, unde! Aspernatur ipsa laboriosam aut deserunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur
+                                            dolorem, eos at iste mollitia dolore labore odio? Dolorum temporibus vel
+                                            architecto animi? Blanditiis, unde! Aspernatur ipsa laboriosam aut deserunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur
+                                            dolorem, eos at iste mollitia dolore labore odio? Dolorum temporibus vel
+                                            architecto animi? Blanditiis, unde! Aspernatur ipsa laboriosam aut deserunt!
+
+                                        </p>
+                                    </div>
+
+                                    <!-- Shops -->
+                                    <div class="col-md-9 mb-2 projectShops">
+                                        <h2 class="mb-3 mt-2">Mağazalar</h2>
+                                        <div class="row">
+                                            <!-- Web slider -->
+                                            <div class="col-lg-3  col-md-7 mb-2 projectShopBoxs">
+                                                <!-- Featured image -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info">
+                                                    <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                        class="img-fluid rounded hover-lift-light" alt="">
+                                                </a>
+                                                <!-- Title -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3  col-md-7 mb-2 projectShopBoxs">
+                                                <!-- Featured image -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info">
+                                                    <img src="./assets/Images/home_architect2_slider2-1568x653.jpg"
+                                                        class="img-fluid rounded hover-lift-light" alt="">
+                                                </a>
+                                                <!-- Title -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3  col-md-7 mb-2 projectShopBoxs">
+                                                <!-- Featured image -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info">
+                                                    <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
+                                                        class="img-fluid rounded hover-lift-light" alt="">
+                                                </a>
+                                                <!-- Title -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3  col-md-7 mb-2 projectShopBoxs">
+                                                <!-- Featured image -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info">
+                                                    <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                        class="img-fluid rounded hover-lift-light" alt="">
+                                                </a>
+                                                <!-- Title -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3  col-md-7 mb-2 projectShopBoxs">
+                                                <!-- Featured image -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info">
+                                                    <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                        class="img-fluid rounded hover-lift-light" alt="">
+                                                </a>
+                                                <!-- Title -->
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Mobile Slider -->
+                                        <div class="owl-carousel owl-carousel-slider owl-theme mobile-owl  p-0 m-0">
+                                            <div class="item me-2">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    <img style=" border-radius: 5px;"
+                                                        src="./assets/Images/home_architect2_slider2-1568x653.jpg"
+                                                        alt="" width="100% ">
+                                                </a>
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3"
+                                                    style="color: #000;">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                            <div class="item me-2">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    <img style=" border-radius: 5px;"
+                                                        src="./assets/Images/slide-susa.gif" alt="" width="100% ">
+                                                </a>
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3"
+                                                    style="color: #000;">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                            <div class="item me-2">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    <img style=" border-radius: 5px;" src="./assets/Images/cam.png"
+                                                        alt="" width="100% ">
+                                                </a>
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3"
+                                                    style="color: #000;">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                            <div class="item me-2">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    <img style=" border-radius: 5px;"
+                                                        src="./assets/Images/slide-service3-scaled.gif" alt=""
+                                                        width="100% ">
+                                                </a>
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3"
+                                                    style="color: #000;">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                            <div class="item me-2">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    <img style=" border-radius: 5px;"
+                                                        src="./assets/Images/slide-projec-yujk-scaled.gif" alt=""
+                                                        width="100% ">
+                                                </a>
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3"
+                                                    style="color: #000;">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                            <div class="item me-2">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
+                                                    <img style=" border-radius: 5px;"
+                                                        src="./assets/Images/slide-susa.gif" alt="" width="100% ">
+                                                </a>
+                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
+                                                    class="projectBoxTitle d-block  text-decoration-none mt-3"
+                                                    style="color: #000;">
+                                                    Gravida ullamcorper
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Go to previous posts -->
+                                    <div class="col-md-9 mb-2 text-end">
+                                        <!-- Go to previous posts -->
+                                        <a href="#" data-bs-dismiss="modal" aria-label="Close"
+                                            class="projectBackBtn btn btn-pastel-primary hover-lift-light text-uppercase-bold-sm mt-4">
+                                            <i class="fas fa-chevron-left fa-sm mr-2"></i>
+                                            Geriyə qayıt
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Info Project -->
+        <div class="modal fade  projectInfoModal" id="project-info" tabindex="-1" role="dialog"
+            aria-labelledby="project-testTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="project-testTitle"> Gravida ullamcorper</h2>
+                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row mt-4 justify-content-center ">
+                                    <!-- Post -->
+                                    <!-- Featured image -->
+                                    <div class="col-md-9 col-sm-11 mb-2 ">
+                                        <div class="projectInfoSliders">
+                                            <div class="projectInfoSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="projectInfoSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/slide-susa.gif"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="projectInfoSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>>
+                                                </div>
+                                            </div>
+                                            <a class="info-prev-btn prev-btn" href="#">&lt;</a>
+                                            <a class="info-next-btn next-btn" href="#">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <!-- Title -->
+
+                                    <div class="col-md-9 mb-2">
+                                        <h1 class="h5 d-block text-dark text-decoration-none mt-4">
+                                            Info Test Modal
+                                        </h1>
+                                    </div>
+                                    <!-- Read more -->
+                                    <div class="col-md-9 mb-2">
+                                        <p class="d-inline-block  mt-2 ">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
+                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
+                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
+                                            dolorem veniam.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
+                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
+                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
+                                            dolorem veniam.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
+                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
+                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
+                                            dolorem veniam.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
+                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
+                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
+                                            dolorem veniam.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal News -->
+        <div class="modal fade" id="newsModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="newsModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="newsModalScrollableTitle">All News
+                        </h2>
+                        <button type="button" id="close-first" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row mt-4">
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-12 mb-2 newsBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test">
+                                            <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test"
+                                            class="newsBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Gravida ullamcorper
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-12 mb-2 newsBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test">
+                                            <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test"
+                                            class="newsBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Gravida ullamcorper
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-12 mb-2 newsBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test">
+                                            <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test"
+                                            class="newsBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Gravida ullamcorper
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4  col-md-12 mb-2 newsBoxs">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test">
+                                            <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test"
+                                            class="newsBoxTitle d-block text-dark text-decoration-none mt-4">
+                                            Gravida ullamcorper
+                                        </a>
+
+                                        <!-- Read more -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#new-test"
+                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
+                                            Read post
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!-- Go to previous posts -->
+                                <a href="#" type="button" data-bs-dismiss="modal" aria-label="Close"
+                                    class="newsBackBtn btn btn-pastel-primary hover-lift-light text-uppercase-bold-sm mt-4">
+                                    <i class="fas fa-chevron-left fa-sm mr-2"></i>
+                                    Ana səhİfəyə qayıt
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal New -->
+        <div class="modal fade  newModal" id="new-test" tabindex="-1" role="dialog" aria-labelledby="new-testTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="new-testTitle"> Gravida ullamcorper</h2>
+                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row mt-4 justify-content-center ">
+                                    <!-- Post -->
+
+                                    <!-- Featured image -->
+                                    <div class="col-md-11 col-sm-11 mb-2 ">
+                                        <div class="newSliders">
+                                            <div class="newSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="newSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/slide-susa.gif"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="newSlide">
+                                                <div class="image-container">
+                                                    <a href="#!">
+                                                        <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
+                                                            class="img-fluid rounded hover-lift-light" alt="">
+                                                    </a>>
+                                                </div>
+                                            </div>
+                                            <a class="prev-new-btn prev-btn" href="#">&lt;</a>
+                                            <a class="next-new-btn next-btn" href="#">&gt;</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Title -->
+                                    <div class="col-md-11 mb-2">
+                                        <h1 class="h5 d-block text-dark text-decoration-none mt-4">
+                                            Gravida ullamcorper
+                                        </h1>
+                                    </div>
+                                    <!-- Read more -->
+                                    <div class="col-md-11 mb-2">
+                                        <p class="d-inline-block  mt-2 ">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
+
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
+
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cams -->
+        <div class="modal fade" id="camsModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="camModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="camModalScrollableTitle">Online CAMs</h2>
+                        <button type="button" id="close-first" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row mt-4">
+                                    <!-- Post -->
+                                    <div class="col-lg-4 col-md-10 camBox">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#camModal-test">
+                                            <img src="./assets/Images/Asset-1-1.png"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-toggle="modal" data-target="#camModal-test"
+                                            class="h5 d-block text-dark text-decoration-none mt-4">
+                                            Port Baku Residence
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4 col-md-10 camBox">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#camModal-test">
+                                            <img src="./assets/Images/Asset-1-1.png"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-toggle="modal" data-target="#camModal-test"
+                                            class="h5 d-block text-dark text-decoration-none mt-4">
+                                            Port Baku Residence
+                                        </a>
+                                    </div>
+                                    <!-- Post -->
+                                    <div class="col-lg-4 col-md-10 camBox">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#camModal-test">
+                                            <img src="./assets/Images/Asset-1-1.png"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-toggle="modal" data-target="#camModal-test"
+                                            class="h5 d-block text-dark text-decoration-none mt-4">
+                                            Port Baku Residence
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-10 camBox">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#camModal-test">
+                                            <img src="./assets/Images/Asset-1-1.png"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-toggle="modal" data-target="#camModal-test"
+                                            class="h5 d-block text-dark text-decoration-none mt-4">
+                                            Port Baku Residence
+                                        </a>
+                                    </div>
+                                </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cams 1 -->
+        <div class="modal fade camModal" id="camModal-test" tabindex="-1" role="dialog"
+            aria-labelledby="camModal-testTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content shadow-lg">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="camModal-testTitle">
+                            Port Baku Residence Online
+                            CAMs
+                        </h2>
+                        <button type="button" id="close-first" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row  mt-4">
+                                    <!-- Post -->
+                                    <div class="col-lg-4 col-md-10 camBox">
+                                        <!-- Featured image -->
+                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#liveModal-test">
+                                            <img src="./assets/Images/Asset-1-1.png"
+                                                class="img-fluid rounded hover-lift-light" alt="">
+                                        </a>
+
+                                        <!-- Title -->
+                                        <a href="#!" data-toggle="modal" data-target="#liveModal-test"
+                                            class="h5 d-block text-center text-dark text-decoration-none mt-4">
+                                            1
+                                        </a>
+                                    </div>
+
+                                </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cam 2 -->
+        <div class="modal fade liveCameraModal" id="liveModal-test" tabindex="-1" role="dialog"
+            aria-labelledby="camModal-testTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content shadow-lg">
+                    <div class="modal-header">
+                        <h2 style="color:#00a7c6;" class="modal-title" id="camModal-testTitle">
+                            Port Baku Residence Online
+                            CAM - 1
+                        </h2>
+                        <button type="button" id="close-first" class="" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Older posts -->
+                        <section class="mt-2 fx-fade-up">
+                            <div class="container">
+                                <div class="row  mt-4 justify-content-center">
+                                    <!-- Post -->
+                                    <div class="col-lg-10  camBox">
+                                        <div class="camera-container row">
+                                            <div class="col-lg-8 camera-feed">
+                                            </div>
+                                            <div class="camera-controls ">
+                                                <!-- <div class="col-4">
+                                                    <button class="btn btn-primary" id="start-button">1</button>
+                                                </div>
+                                                <div class="col-4">
+                                                    <button class="btn btn-danger" id="stop-button">2</button>
+                                                </div> -->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Modal Contact -->
         <div class="modal fade" id="contactModalScrollable" tabindex="-1" role="dialog"
@@ -347,402 +1419,263 @@
             </div>
         </div>
 
-        <!-- Modal Projects -->
-        <div class="modal fade" id="projectsModalScrollable" tabindex="-1" role="dialog"
-            aria-labelledby="projectsModalScrollableTitle" aria-hidden="true">
+        <!-- Modal Login -->
+        <div class="modal fade" id="loginModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="loginModalScrollableTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-                <div class="modal-content">
+                <div class="modal-content ">
                     <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="projectsModalScrollableTitle">All Projects
+                        <h2 style="color:#00a7c6;" class="modal-title" id="loginModalScrollableTitle">
+                            İstifadəçi kabineti
                         </h2>
                         <button type="button" id="close-first" class="" data-bs-dismiss="modal" aria-label="Close">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <!-- Older posts -->
-                        <section class="mt-2 fx-fade-up">
-                            <div class="container">
-                                <div class="row mt-4">
-                                    <!-- Post -->
-                                    <div class="col-lg-4  col-md-9 mb-2 projectBoxs">
-                                        <!-- Featured image -->
-                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
-                                            data-bs-target="#project-test">
-                                            <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
-                                                class="img-fluid rounded hover-lift-light" alt="">
-                                        </a>
 
-                                        <!-- Title -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
-                                            Gravida ullamcorper
-                                        </a>
-
-                                        <!-- Read more -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
-                                            Read post
-                                        </a>
-                                    </div>
-                                    <!-- Post -->
-                                    <div class="col-lg-4  col-md-9 mb-2 projectBoxs">
-                                        <!-- Featured image -->
-                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
-                                            data-bs-target="#project-test">
-                                            <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
-                                                class="img-fluid rounded hover-lift-light" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
-                                            Gravida ullamcorper
-                                        </a>
-
-                                        <!-- Read more -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
-                                            Read post
-                                        </a>
-                                    </div>
-                                    <!-- Post -->
-                                    <div class="col-lg-4  col-md-9 mb-2 projectBoxs">
-                                        <!-- Featured image -->
-                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
-                                            data-bs-target="#project-test">
-                                            <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
-                                                class="img-fluid rounded hover-lift-light" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
-                                            Gravida ullamcorper
-                                        </a>
-
-                                        <!-- Read more -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
-                                            Read post
-                                        </a>
-                                    </div>
-                                    <!-- Post -->
-                                    <div class="col-lg-4  col-md-9 mb-2 projectBoxs">
-                                        <!-- Featured image -->
-                                        <a href="#!" id="openModal2" data-bs-toggle="modal"
-                                            data-bs-target="#project-test">
-                                            <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
-                                                class="img-fluid rounded hover-lift-light" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="projectBoxTitle d-block text-dark text-decoration-none mt-4">
-                                            Gravida ullamcorper
-                                        </a>
-
-                                        <!-- Read more -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#project-test"
-                                            class="postReadText d-inline-block border-bottom border-primary text-decoration-none mt-2 pb-1">
-                                            Read post
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <!-- Go to previous posts -->
-                                <a href="#"
-                                    class="projectBackBtn btn btn-pastel-primary hover-lift-light text-uppercase-bold-sm mt-4">
-                                    <i class="fas fa-chevron-left fa-sm mr-2"></i>
-                                    Ana səhİfəyə qayıt
+                        <form class="row  " action="#" method="post" enctype="multipart/form-data">
+                            <div class="loginLogoImage d-flex justify-content-center">
+                                <a href="#">
+                                    <img decoding="async" src="./assets/Images/xaribulbulgroup-logo.png" alt="">
                                 </a>
                             </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Project -->
-        <div class="modal fade  projectModal" id="project-test" tabindex="-1" role="dialog"
-            aria-labelledby="project-testTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="project-testTitle"> Gravida ullamcorper</h2>
-                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
+                            <div class="loginEmail col-lg-6">
+                                <label class="quform-label-text" for="loginEmailInput">
+                                    İstifadəçi adı<span class="loginRequired">*</span>
+                                </label>
+                                <input id="loginEmailInput" class="" type="text" aria-label="default input example">
 
-                        <!-- Older posts -->
-                        <section class="mt-2 fx-fade-up">
-                            <div class="container">
-                                <div class="row mt-4 justify-content-center ">
-                                    <!-- Post -->
-
-                                    <!-- Featured image -->
-                                    <div class="col-md-9 col-sm-11 mb-2 ">
-                                        <div class="projectSliders">
-                                            <div class="projectSlide">
-                                                <div class="image-container">
-                                                    <a href="#!">
-                                                        <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
-                                                            class="img-fluid rounded hover-lift-light" alt="">
-                                                    </a>
-
-                                                </div>
-                                            </div>
-                                            <div class="projectSlide">
-                                                <div class="image-container">
-                                                    <a href="#!">
-                                                        <img src="./assets/Images/slide-susa.gif"
-                                                            class="img-fluid rounded hover-lift-light" alt="">
-                                                    </a>
-
-                                                </div>
-                                            </div>
-                                            <div class="projectSlide">
-                                                <div class="image-container">
-                                                    <a href="#!">
-                                                        <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
-                                                            class="img-fluid rounded hover-lift-light" alt="">
-                                                    </a>>
-                                                </div>
-                                            </div>
-                                            <a class="prev-btn" href="#">&lt;</a>
-                                            <a class="next-btn" href="#">&gt;</a>
-                                        </div>
-                                    </div>
-                                    <!-- Title -->
-
-                                    <div class="col-md-9 mb-2">
-                                        <h1 class="h5 d-block text-dark text-decoration-none mt-4">
-                                            Gravida ullamcorper
-                                        </h1>
-                                    </div>
-                                    <!-- Read more -->
-                                    <div class="col-md-9 mb-2">
-                                        <p class="d-inline-block  mt-2 ">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor,
-
-
-
-                                        </p>
-                                    </div>
-
-                                    <!-- Shops -->
-                                    <div class="col-md-9 mb-2 projectShops">
-                                        <h2 class="mb-3 mt-2">Mağazalar</h2>
-                                        <div class="row">
-                                            <div class="col-lg-3  col-md-9 mb-2 projectShopBoxs">
-                                                <!-- Featured image -->
-                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info">
-                                                    <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
-                                                        class="img-fluid rounded hover-lift-light" alt="">
-                                                </a>
-                                                <!-- Title -->
-                                                <a href="#!" data-bs-toggle="modal" data-bs-target="#project-info"
-                                                    class="projectBoxTitle d-block  text-decoration-none mt-3">
-                                                    Gravida ullamcorper
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Go to previous posts -->
-                                    <div class="col-md-9 mb-2 text-end">
-                                        <!-- Go to previous posts -->
-                                        <a href="#"
-                                            class="projectBackBtn btn btn-pastel-primary hover-lift-light text-uppercase-bold-sm mt-4">
-                                            <i class="fas fa-chevron-left fa-sm mr-2"></i>
-                                            Ana səhİfəyə qayıt
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
-                        </section>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Project -->
-
-
-        <!-- Modal Info Project -->
-        <div class="modal fade  projectInfoModal" id="project-info" tabindex="-1" role="dialog"
-            aria-labelledby="project-testTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="project-testTitle"> Gravida ullamcorper</h2>
-                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Older posts -->
-                        <section class="mt-2 fx-fade-up">
-                            <div class="container">
-                                <div class="row mt-4 justify-content-center ">
-                                    <!-- Post -->
-                                    <!-- Featured image -->
-                                    <div class="col-md-9 col-sm-11 mb-2 ">
-                                        <div class="projectInfoSliders">
-                                            <div class="projectInfoSlide">
-                                                <div class="image-container">
-                                                    <a href="#!">
-                                                        <img src="./assets/Images/home_architect2_slider1-1568x653.jpg"
-                                                            class="img-fluid rounded hover-lift-light" alt="">
-                                                    </a>
-
-                                                </div>
-                                            </div>
-                                            <div class="projectInfoSlide">
-                                                <div class="image-container">
-                                                    <a href="#!">
-                                                        <img src="./assets/Images/slide-susa.gif"
-                                                            class="img-fluid rounded hover-lift-light" alt="">
-                                                    </a>
-
-                                                </div>
-                                            </div>
-                                            <div class="projectInfoSlide">
-                                                <div class="image-container">
-                                                    <a href="#!">
-                                                        <img src="./assets/Images/home_architect2_slider3-1568x653.jpg"
-                                                            class="img-fluid rounded hover-lift-light" alt="">
-                                                    </a>>
-                                                </div>
-                                            </div>
-                                            <a class="info-prev-btn" href="#">&lt;</a>
-                                            <a class="info-next-btn" href="#">&gt;</a>
-                                        </div>
-                                    </div>
-                                    <!-- Title -->
-
-                                    <div class="col-md-9 mb-2">
-                                        <h1 class="h5 d-block text-dark text-decoration-none mt-4">
-                                            Info Test Modal
-                                        </h1>
-                                    </div>
-                                    <!-- Read more -->
-                                    <div class="col-md-9 mb-2">
-                                        <p class="d-inline-block  mt-2 ">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
-                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
-                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
-                                            dolorem veniam.
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
-                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
-                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
-                                            dolorem veniam.
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
-                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
-                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
-                                            dolorem veniam.
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quis
-                                            perferendis, in ab dignissimos velit minus quaerat tempore commodi,
-                                            veritatis perspiciatis rerum tempora! Itaque minima dolorum esse asperiores
-                                            dolorem veniam.
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="loginPassword col-lg-6">
+                                <label class="quform-label-text" for="inputPassword5">
+                                    Şifrə<span class="loginRequired">*</span>
+                                </label>
+                                <input type="password" id="inputPassword5" class="" aria-labelledby="passwordHelpBlock">
                             </div>
-                        </section>
+
+                            <div class="col-lg-6 loginRememberMe">
+                                <input type="checkbox" class="" value="Məni unutma">
+                                <span class="quform-option-text">
+                                    Məni unutma
+                                </span>
+                            </div>
+                            <div class="col-lg-6 loginButton">
+                                <button name="quform_submit" type="submit" class="btn" value="submit">
+                                    <span class="spanText quform-button-text quform-button-submit-text">
+                                        DAXİL
+                                        OL
+                                    </span>
+                                    <span class="quform-button-icon quform-button-submit-icon">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+
+
 
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Info Project -->
 
-
-        <!-- General Modal -->
-        <div class="modal fade" id="generalModalScrollable" tabindex="-1" aria-labelledby="generalModalScrollable"
+        <!-- Contact Us Modal -->
+        <div class="modal fade " id="contactUsModal" role="dialog" tabindex="-1" aria-labelledby="contactUsModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-xl">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable " role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title" id="generalModalScrollableLabel">General</h2>
-                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                        <h2 class="modal-title" id="contactUsModalLabel">Contact Us</h2>
+                        <button type="button" id="close-first" class="" data-bs-dismiss="modal" aria-label="Close">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
                     <div class="modal-body">
 
-                        Müasir dövürdə rəqabət mühitinə tab gətirmək üçün şirkətlər öz brend simalarını formalaşdırmağa
-                        çox
-                        böyük önəm verirlər.
+                        <form class="row  " action="#" method="post" enctype="multipart/form-data">
+                            <div class="contactLogoImage d-flex justify-content-center">
+                                <a href="#">
+                                    <img decoding="async" src="./assets/Images/xaribulbulgroup-logo.png" alt="">
+                                </a>
+                            </div>
 
-                        Düzgün brend strategiyasının məhsulun və xidmətin realizə olunmasında rolu kifayət qədər
-                        böyükdür.
-                        Ona görə də korporativ brendləşmə “ MƏN ” şirkətinin ən mühüm fəaliyyət istiqamətlərindən
-                        biridir.
-                        Bu fəaliyyətə xırda və böyük şirkətlərlə, eləcə də alış-veriş və restoran şəbəkələri, idman
-                        klubları
-                        və böyük beynəlxalq təşkilatlarla iş daxildir. Korporativ brendləşmə fəaliyyəti çərçivəsində “
-                        MƏN ”
-                        MMC həyata keçirir: korporativ brendləşmənin strategiyası və platforması, korporativ stil –
-                        brendin
-                        vizual qrafik təsviri, marka inkişaf strategiyası, brendbook-un hazırlanması.
 
-                        “ MƏN ” MMC eyni zamanda markaların müəllif hüquqlarının təşkilini də nəzərdə tutur
+                            <!-- AdSoyad -->
+                            <div class="contactUsInputsBox col-lg-6  col-md-8 col-sm-9">
+                                <label class="quform-label-text" for="contactNameInput">
+                                    Adınız Soyadınız<span class="contactRequired">*</span>
+                                </label>
+                                <input id="contactNameInput" class="" type="text" aria-label="default input example">
+                            </div>
+                            <!-- Nomre -->
+                            <div class="contactUsInputsBox col-lg-6 col-md-8 col-sm-9">
+                                <label class="quform-label-text" for="contactNumberInput">
+                                    Əlaqə nömrəniz<span class="contactRequired">*</span>
+                                </label>
+                                <input id="contactNumberInput" class="" type="tel" aria-label="default input example">
+                                <div id="numberError" class="error-message"></div>
+                            </div>
+                            <!-- Email -->
+                            <div class="contactUsInputsBox col-lg-6 col-md-8 col-sm-9">
+                                <label class=" quform-label-text" for="contactEmailInput">
+                                    Emailiniz<span class="contactRequired">*</span>
+                                </label>
+                                <input id="contactEmailInput" class="" type="email" aria-label="default input example">
+                                <div id="emailError" class="error-message"></div>
+                            </div>
+
+                            <!-- Desc -->
+                            <div class="contactUsInputsBox col-lg-6 col-md-8 col-sm-9">
+                                <label class="quform-label-text" for="contactDescInput">
+                                    Məktub<span class="contactRequired">*</span>
+                                </label>
+                                <textarea maxlength="1000" name="" id="" rows="6"></textarea>
+                            </div>
+                            <!-- btn -->
+                            <div class="col-lg-6 col-md-8 col-sm-9 contactButton">
+                                <button name="quform_submit" type="submit" class="btn" value="submit">
+                                    <span class="spanText quform-button-text quform-button-submit-text">
+                                        GÖNDƏR
+                                    </span>
+                                    <span class="quform-button-icon quform-button-submit-icon">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
 
                     </div>
-
                 </div>
             </div>
         </div>
-        <!-- Services Modal -->
-        <div class="modal fade" id="servicesModalScrollable" tabindex="-1" aria-labelledby="servicesModalScrollable"
+
+        <!-- User Modal -->
+        <div class="modal fade " id="userModal" role="dialog" tabindex="-1" aria-labelledby="userModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable " role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title" id="servicesModalScrollableLabel">Services</h2>
-                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                        <h2 class="modal-title" id="userModalLabel">İstifadəçi kabineti</h2>
+                        <button type="button" id="close-first" class="" data-bs-dismiss="modal" aria-label="Close">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
+                    <!-- Modal User -->
                     <div class="modal-body">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-8 servicesBox rightP ">
-                                <h2>Memarlıq</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit sollicitudin
-                                    ipsum a consectetur. Suspendisse potenti. Donec in mauris ullamcorper, semper est
-                                    non, tristique nisi. Curabitur placerat eros felis, a porta ipsum sodales interdum.
-                                    Aliquam ac orci nibh. Aenean sit amet interdum enim. Aenean ornare libero ante, sed
-                                    sollicitudin tellus placerat vel. Integer auctor lacus pulvinar velit tincidunt
-                                    tempus. Morbi aliquam malesuada quam. Proin quis magna et nunc pulvinar commodo.</p>
-                                <div class="servicesModalImage">
-                                    <img style="width: 32px; height: 66px;" src="./assets/Images/icon1.png" alt="">
+                        <div class="row" id="accordion">
+                            <div class="d-flex align-items-start row">
+                                <div class="col-lg-3 col-md-12 userInformationBox">
+                                    <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+                                        <h6 class="  mb-3 ms-4">
+                                            İnformation
+                                        </h6>
+                                        <button class="btn  active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-home" type="button" role="tab"
+                                            aria-controls="v-pills-home" aria-selected="true">General</button>
+                                        <button class="btn" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-profile" type="button" role="tab"
+                                            aria-controls="v-pills-profile" aria-selected="false">Contract</button>
+                                        <button class="btn" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-messages" type="button" role="tab"
+                                            aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                                        <button class="btn" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-settings" type="button" role="tab"
+                                            aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4  col-md-8 servicesBox boxPadding iceri">
-                                <h2>Layihə</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit sollicitudin
-                                    ipsum a consectetur. Suspendisse potenti. Donec in mauris ullamcorper, semper est
-                                    non, tristique nisi. Curabitur placerat eros felis, a porta ipsum sodales interdum.
-                                    Aliquam ac orci nibh. Aenean sit amet interdum enim. Aenean ornare libero ante, sed
-                                    sollicitudin tellus placerat vel. Integer auctor lacus pulvinar velit tincidunt
-                                    tempus. Morbi aliquam malesuada quam. Proin quis magna et nunc pulvinar commodo.</p>
-                                <div class="servicesModalImage">
-                                    <img style="width: 53px; height: 46px;" src="./assets/Images/icon2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-4  col-md-8 servicesBox leftP ">
-                                <h2>Tikinti</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit sollicitudin
-                                    ipsum a consectetur. Suspendisse potenti. Donec in mauris ullamcorper, semper est
-                                    non, tristique nisi. Curabitur placerat eros felis, a porta ipsum sodales interdum.
-                                    Aliquam ac orci nibh. Aenean sit amet interdum enim. Aenean ornare libero ante, sed
-                                    sollicitudin tellus placerat vel. Integer auctor lacus pulvinar velit tincidunt
-                                    tempus. Morbi aliquam malesuada quam. Proin quis magna et nunc pulvinar commodo.</p>
-                                <div class="servicesModalImage ">
-                                    <img style="width: 70px; height: 35px;" src="./assets/Images/icon3.png" alt="">
+                                <div class="col-lg-9 col-md-12">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="card-header bg-white py-4">
+                                            <h5 class=" m-0">
+                                                Basic information
+                                            </h5>
+                                        </div>
+                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                            aria-labelledby="v-pills-home-tab" tabindex="0">
+                                            <div id="collapseOne">
+                                                <div class="card-body">
+                                                    <div
+                                                        class="d-flex align-items-center border-bottom border-gray-200 pb-4 mb-4">
+                                                        <div class="avatar avatar-lg">
+                                                            <img src="http://2.gravatar.com/avatar/?s=96&d=mm&r=g"
+                                                                class="avatar-image rounded-circle" alt="">
+                                                        </div>
+                                                        <div class="avatarText flex-1 ml-4 pl-2">
+                                                            <h6 class="text-darkblue">
+                                                                Ibrahimli Ibrahim
+                                                            </h6>
+                                                            <span class="font-size-sm ">
+                                                                Port Baku Residence, Flat 4th, Floor 7
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                            aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                            <div id="collapseTwo">
+                                                <div class="card-body">
+                                                    <div
+                                                        class="d-flex align-items-center border-bottom border-gray-200 pb-4 mb-4 row">
+
+                                                        <p>
+                                                            sAnim pariatur cliche reprehenderit, enim eiusmod high life
+                                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                                            aute,
+                                                            non
+                                                            cupidatat skateboard dolor brunch. Food truck quinoa
+                                                            nesciunt
+                                                            laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
+                                                            a
+                                                            bird
+                                                            on it squid single-origin coffee nulla assumenda shoreditch
+                                                            et.
+                                                            Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                            anderson
+                                                            cred
+                                                            nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                                            vice
+                                                            lomo.
+                                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                                            aesthetic
+                                                            synth nesciunt you probably haven't heard of them accusamus
+                                                            labore
+                                                            sustainable VHS.
+                                                        </p>
+
+                                                        <a href="./assets/pdf/screen-1.pdf" target="_blank">Download
+                                                            File</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                            aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                            <div id="collapseThree">
+                                                <div class="card-body">
+                                                    <div
+                                                        class="d-flex align-items-center border-bottom border-gray-200 pb-4 mb-4">
+                                                        ...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                            aria-labelledby="v-pills-settings-tab" tabindex="0">
+
+                                            <div id="collapseThree">
+                                                <div class="card-body">
+                                                    <div
+                                                        class="d-flex align-items-center border-bottom border-gray-200 pb-4 mb-4">
+                                                        ...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -750,323 +1683,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal Cams -->
-        <div class="modal fade" id="camsModalScrollable" tabindex="-1" role="dialog"
-            aria-labelledby="camModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-                <div class="modal-content ">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="camModalScrollableTitle">Online CAMs</h2>
-                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Older posts -->
-                        <section class="mt-2 fx-fade-up">
-                            <div class="container">
-                                <div class="row mt-4">
-                                    <!-- Post -->
-                                    <div class="col-lg-4 col-md-6 camBox">
-                                        <!-- Featured image -->
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#camModal-test">
-                                            <img src="./assets/Images/Asset-1-1.png"
-                                                class="img-fluid rounded hover-lift-light" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <a href="#!" data-toggle="modal" data-target="#camModal-test"
-                                            class="h5 d-block text-dark text-decoration-none mt-4">
-                                            Port Baku Residence
-                                        </a>
-                                    </div>
-
-                                </div>
-                        </section>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Cam -->
-        <div class="modal fade camModal" id="camModal-test" tabindex="-1" role="dialog"
-            aria-labelledby="camModal-testTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
-                <div class="modal-content shadow-lg">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="camModal-testTitle">
-                            Port Baku Residence Online
-                            CAM
-                        </h2>
-                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Older posts -->
-                        <section class="mt-2 fx-fade-up">
-                            <div class="container">
-                                <div class="row justify-content-center mt-4">
-                                    <!-- Post -->
-                                    <div class="col-md-9 col-sm-11">
-                                        <!-- Camera -->
-                                        <div id="video-container">
-                                            <iframe id="video-frame" width="100%" height="350px" src="" frameborder="0"
-                                                allowfullscreen></iframe>
-                                        </div>
-
-                                    </div>
-                                    <!-- Go to previous posts -->
-                                    <div class="col-md-9 col-sm-11 mb-2 text-end">
-                                        <a href="#" data-bs-dismiss="modal" aria-label="Close"
-                                            class="projectBackBtn btn btn-pastel-primary hover-lift-light text-uppercase-bold-sm mt-4">
-                                            <i class="fas fa-chevron-left fa-sm mr-2"></i>
-                                            Geriyə qayıt
-                                        </a>
-                                    </div>
-                                </div>
-                        </section>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Login -->
-        <div class="modal fade" id="loginModalScrollable" tabindex="-1" role="dialog"
-            aria-labelledby="loginModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
-                <div class="modal-content shadow-lg">
-                    <div class="modal-header">
-                        <h2 style="color:#00a7c6;" class="modal-title" id="loginModalScrollableTitle">
-                            İstifadəçi kabineti
-                        </h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="wp-block-columns is-layout-flex wp-container-11">
-                            <div class="wp-block-column is-layout-flow" style="flex-basis:50%">
-                               
-                                <form class="row justify-content-center" action="#" method="post" enctype="multipart/form-data">
-                                    <div class="wp-block-image">
-                                        <a href="#">
-                                            <img decoding="async" src="./assets/Images/xaribulbulgroup-logo.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <label class="quform-label-text" for="quform_1_3_5d0a66">
-                                            İstifadəçi adı<span class="quform-required">*</span>
-                                        </label>
-                                        <input class="form-control" type="text" aria-label="default input example">
-
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <label class="quform-label-text" for="quform_1_4_5d0a66">
-                                            Şifrə<span class="quform-required">*</span>
-                                        </label>
-                                        <input type="password" id="inputPassword5" class="form-control"
-                                            aria-labelledby="passwordHelpBlock">
-
-                                    </div>
-
-                                    <div class="col-lg-8">
-                                        <input type="checkbox" class="" value="Məni unutma">
-                                        <span class="quform-option-text">
-                                            Məni
-                                            unutma
-                                        </span>
-                                        </label>
-                                    </div>
-
-                                    <div class="col-lg-8">
-                                        <button name="quform_submit" type="submit" class="quform-submit" value="submit">
-                                            <span class="quform-button-text quform-button-submit-text">
-                                                DAXİL
-                                                OL
-                                            </span><span class="quform-button-icon quform-button-submit-icon">
-                                                <i class="fa fa-chevron-right"></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                            </div>
-                            </form>
-                        </div>
-
-
-
-                        <div class="wp-block-column is-layout-flow" style="flex-basis:25%"></div>
-                    </div>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        </div>
-
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="exampleModalLabel">Services</h2>
-                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-
-                        Müasir dövürdə rəqabət mühitinə tab gətirmək üçün şirkətlər öz brend simalarını formalaşdırmağa
-                        çox
-                        böyük önəm verirlər.
-
-                        Düzgün brend strategiyasının məhsulun və xidmətin realizə olunmasında rolu kifayət qədər
-                        böyükdür.
-                        Ona görə də korporativ brendləşmə “ MƏN ” şirkətinin ən mühüm fəaliyyət istiqamətlərindən
-                        biridir.
-                        Bu fəaliyyətə xırda və böyük şirkətlərlə, eləcə də alış-veriş və restoran şəbəkələri, idman
-                        klubları
-                        və böyük beynəlxalq təşkilatlarla iş daxildir. Korporativ brendləşmə fəaliyyəti çərçivəsində “
-                        MƏN ”
-                        MMC həyata keçirir: korporativ brendləşmənin strategiyası və platforması, korporativ stil –
-                        brendin
-                        vizual qrafik təsviri, marka inkişaf strategiyası, brendbook-un hazırlanması.
-
-                        “ MƏN ” MMC eyni zamanda markaların müəllif hüquqlarının təşkilini də nəzərdə tutur
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal User
-<div class="modal-body">
-  <div class="row" id="accordion">
-      <div class="col-md-3 pl-5">
-          Sidebar
-          <h6 class="text-uppercase-bold-sm text-muted mt-md-4 mb-3">
-              İnformation
-          </h6>
-          <ul class="list text-darkblue">
-              <li class="list-item active">
-                  <a class="text-reset" role="button" data-toggle="collapse"
-                      data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      General
-                  </a>
-              </li>
-              <li class="list-item">
-                  <a class="text-reset" role="button" data-toggle="collapse"
-                      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Contract
-                  </a>
-              </li>
-              <li class="list-item">
-                  <a class="text-reset" role="button" data-toggle="collapse"
-                      data-target="#collapsethree" aria-expanded="false"
-                      aria-controls="collapsethree">
-                      Live camera
-                  </a>
-              </li>
-              <li class="list-item">
-                  <a class="text-reset" role="button" data-toggle="collapse"
-                      data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                      Online Chat
-                  </a>
-              </li>
-          </ul>
-      </div>
-      <div class="col-md-9">
-          Main content
-          <div class="card shadow-sm">
-              <div class="card-header bg-white py-4">
-                  <h5 class="text-darkblue m-0">
-                      Basic information
-                  </h5>
-              </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                  data-parent="#accordion">
-                  <div class="card-body">
-                      <div class="d-flex align-items-center border-bottom border-gray-200 pb-4 mb-4">
-                          <div class="avatar avatar-lg">
-                              <img src="http://2.gravatar.com/avatar/?s=96&d=mm&r=g"
-                                  class="avatar-image rounded-circle" alt="">
-                          </div>
-                          <div class="flex-1 ml-4 pl-2">
-                              <div class="float-lg-left">
-                                  <h6 class="text-darkblue">
-                                      Sahil Balazadeh
-                                  </h6>
-                                  <span class="font-size-sm text-muted">
-                                      Port Baku residence, 4th floor, 45 flat
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                  data-parent="#accordion">
-                  <div class="card-body">
-                      sAnim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                      richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                      brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                      shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                      cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                      Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                      you probably haven't heard of them accusamus labore sustainable VHS.
-                      <a href="echo esc_html($url); ?>" target="_blank">Download File</a>
-
-                  </div>
-              </div>
-              <div id="collapsethree" class="collapse" aria-labelledby="headingthree"
-                  data-parent="#accordion">
-                  <div class="card-body">
-                      <section class="mt-2 fx-fade-up">
-                          <div class="container">
-
-                              <div class="row mt-4">
-                                  Post
-                                  <div class="col-md-4">
-                                      Featured image
-                                      <a href="#!">
-                                          <img src=" the_post_thumbnail_url(); ?>"
-                                              class="img-fluid rounded hover-lift-light" alt="">
-                                      </a>
-
-                                      Title
-                                      <a href="#!"
-                                          class="h5 d-block text-dark text-decoration-none mt-4">
-
-                                      </a>
-                                  </div>
-
-                              </div>
-                          </div>
-                      </section>
-                  </div>
-              </div>
-              <div id="collapsefour" class="collapse" aria-labelledby="headingfour"
-                  data-parent="#accordion">
-                  <div class="card-body">
-
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</div> -->
-
-
-
-
-
     </main>
 
     <!-- <script>
@@ -1123,73 +1739,6 @@
 
     </script> -->
 
-    <!-- Slider image and text -->
-    <script>
-        var slides = document.querySelectorAll('.slide');
-        var kutular = document.querySelectorAll('.kutu');
-        var descList = document.querySelectorAll('.boxDesc');
-
-        var currentSlide = 0;
-        var slideInterval = setInterval(nextSlide, 150000); // 15 saniyede bir otomatik geçiş
-        var descInterval;
-
-        function nextSlide() {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-            showDesc(currentSlide);
-        }
-
-        function showDesc(slideIndex) {
-            clearInterval(descInterval);
-
-            descList.forEach(function (desc, descIndex) {
-                if (descIndex === slideIndex) {
-                    desc.style.opacity = '0';
-                    desc.style.display = 'block';
-                    desc.style.tra
-                    fadeDescIn(desc);
-                } else {
-                    desc.style.display = 'none';
-                }
-            });
-        }
-
-        function fadeDescIn(desc) {
-            var opacity = 0;
-            descInterval = setInterval(function () {
-                if (opacity < 1) {
-                    opacity += 0.5;
-                    desc.style.opacity = opacity;
-                } else {
-                    clearInterval(descInterval);
-                }
-            }, 100);
-        }
-
-        kutular.forEach(function (kutu, index) {
-            kutu.addEventListener('mouseover', function () {
-                clearInterval(slideInterval);
-                showSlide(index);
-            });
-
-            kutu.addEventListener('mouseout', function () {
-                slideInterval = setInterval(nextSlide, 500000);
-            });
-        });
-
-        function showSlide(index) {
-            slides.forEach(function (slide, slideIndex) {
-                if (slideIndex === index) {
-                    slide.classList.add('active');
-                    showDesc(index);
-                } else {
-                    slide.classList.remove('active');
-                }
-            });
-        }
-
-    </script>
 
 
     <footer></footer>
@@ -1214,10 +1763,63 @@
         $("#close-first").click(function () {
             $('#projectsModalScrollable').removeClass("show");
         })
+
+
     </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#contactEmailInput').on('blur', function () {
+                var email = $(this).val();
+                var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+                if (!regex.test(email)) {
+                    $('#emailError').text('Düzgün e-poçt ünvanı daxil edin.');
+                    $('#emailError').css('padding', '3px 15px');
+
+                } else {
+                    $('#emailError').text('');
+                    $('#emailError').css('padding', '0px');
+
+                }
+            });
+
+        });
+        $(document).ready(function () {
+
+            $('#contactNumberInput').on('blur', function () {
+                var phoneNumber = $(this).val();
+                var numberRegex = /^(050|051|055|070|077|010)(\d{7})$/;
+
+                if (!numberRegex.test(phoneNumber)) {
+                    $('#numberError').text('Zəhmət olmasa düzgün telefon nömrəsi daxil edin.');
+                    $('#numberError').css('padding', '3px 15px');
+
+                } else {
+                    $('#numberError').text('');
+                    $('#numberError').css('padding', '0px');
+
+                }
+            });
+        });
+    </script>
+
+    <!-- Slider image and text -->
+    <script src="./assets/js/revoSlider.js"></script>
+
     <script src="./assets/js/localitaztion.js"></script>
+    <script src="./assets/js/newSlider.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/sliderInfo.js"></script>
+
+    <!-- owlCarousel -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/owlCarousel.js"></script>
+
+
+
+    <script src="./assets/js/liveCamera.js"></script>
 </body>
 
 </html>

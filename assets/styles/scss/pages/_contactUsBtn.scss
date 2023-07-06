@@ -1,4 +1,82 @@
-#loginModalScrollable {
+.contactUsBtnBox {
+    position: fixed;
+    bottom: 5.4%;
+    right: 35px;
+    z-index: 20;
+
+    /* don't forget to set a duration! */
+    a {
+        padding: 18px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: white;
+        border-radius: 46% 46%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            color: #00A7C6;
+            font-size: 24px;
+        }
+    }
+}
+
+//animasiya
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-6px) rotate(-5deg);
+    }
+
+    20% {
+        transform: translateX(6px) rotate(5deg);
+    }
+
+    30% {
+        transform: translateX(-6px) rotate(-5deg);
+    }
+
+    40% {
+        transform: translateX(6px) rotate(5deg);
+    }
+
+    50% {
+        transform: translateX(-6px) rotate(-5deg);
+    }
+
+    60% {
+        transform: translateX(6px) rotate(5deg);
+    }
+
+    70% {
+        transform: translateX(-6px) rotate(-5deg);
+    }
+
+    80% {
+        transform: translateX(6px) rotate(5deg);
+    }
+
+    90% {
+        transform: translateX(-6px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0);
+    }
+}
+
+#hereket {
+    animation: hareket 1.4s infinite;
+}
+
+#hereket {
+    animation: shake 2s infinite;
+}
+
+#contactUsModal {
     .modal-dialog {
         .modal-content {
             .modal-body {
@@ -8,13 +86,15 @@
                     align-items: center;
                     width: 100%;
 
-                    .loginLogoImage {
+                    .contactLogoImage {
                         a {
-                            img {}
+                            img {
+                                margin: 20px 0px;
+                            }
                         }
                     }
 
-                    .loginEmail {
+                    .contactUsInputsBox {
                         padding: 0 0 15px 0;
                         margin: 0 0 5px 0;
 
@@ -25,6 +105,20 @@
                         }
 
                         input {
+                            width: 100%;
+                            margin: 0 0 3px 0;
+                            zoom: 1;
+                            min-width: 10px;
+                            max-width: 100%;
+                            padding: 8px;
+                            height: auto;
+                            line-height: 1.5;
+                            font-size: 1em;
+                            border: 1px solid #e3e3e3;
+                        }
+
+                        textarea {
+                            max-height: 300px;
                             margin: 0 0 3px 0;
                             zoom: 1;
                             min-width: 10px;
@@ -35,6 +129,7 @@
                             line-height: 1.5;
                             font-size: 1em;
                             border: 1px solid #e3e3e3;
+
                         }
 
                         input:focus {
@@ -42,57 +137,17 @@
                             border-color: #719ECE;
                             box-shadow: 0 0 10px #719ECE;
                         }
-                    }
 
-                    .loginPassword {
-                        padding: 0 0 15px 0;
-                        margin: 0 0 5px 0;
-
-                        label {
-                            margin-bottom: 0.5rem;
-                            vertical-align: middle;
-                            cursor: pointer;
-                        }
-
-                        input {
-                            margin: 0 0 3px 0;
-                            zoom: 1;
-                            min-width: 10px;
-                            max-width: 100%;
-                            width: 100%;
-                            padding: 8px;
-                            height: auto;
-                            line-height: 1.5;
-                            font-size: 1em;
-                            border: 1px solid #e3e3e3;
-                        }
-
-                        input:focus {
+                        textarea:focus {
                             outline: none !important;
                             border-color: #719ECE;
                             box-shadow: 0 0 10px #719ECE;
                         }
                     }
 
-                    .loginRememberMe {
-                        padding: 0 0 15px 0;
-                        margin: 0 0 5px 0;
 
-                        input {}
 
-                        span {
-                            position: relative;
-                            vertical-align: middle;
-                            padding-left: 8px;
-                            float: none;
-                            margin: 0;
-                            background-size: cover;
-                            cursor: pointer;
-                            max-width: 100%;
-                        }
-                    }
-
-                    .loginButton {
+                    .contactButton {
                         margin: 10px 0;
 
                         button {
@@ -111,7 +166,7 @@
                             width: 100%;
                             max-width: 100%;
 
-                            .spanText {}
+                            // .spanText {}
 
                             span {
                                 i {
@@ -127,14 +182,27 @@
                         }
                     }
 
-                    .loginRequired {
+                    .contactRequired {
                         color: #cc0101;
                         margin: 0 0 0 5px;
                         font-size: 90%;
                         cursor: pointer;
                     }
+
+                    .error-message {
+                        color: red;
+                        margin: 0;
+                        background-color: #f2dede;
+                        color: #b94a48;
+                        border-left: 5px solid #c73412;
+                        max-width: 100%;
+                        font-family: SpartanMB, sans-serif;
+                        font-size: 1rem;
+                    }
                 }
             }
         }
     }
+
+
 }

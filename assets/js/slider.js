@@ -1,6 +1,6 @@
 const projectSlide = document.querySelectorAll('.projectSlide');
-const projectPrevBtn = document.querySelector('.prev-btn');
-const projectNextBtn = document.querySelector('.next-btn');
+const projectPrevBtn = document.querySelector('.prev-project-btn');
+const projectNextBtn = document.querySelector('.next-project-btn');
 let projectCurrentSlide = 0;
 let projectSlideInterval;
 

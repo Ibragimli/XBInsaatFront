@@ -3,15 +3,13 @@
     background-color: transparent !important;
 
     .modal-dialog {
-        transform: translate(0, -25px) !important;
-        display: flex !important;
-        align-items: center !important;
-        height: 100vh !important;
+
 
         .modal-content {
             border: 0px solid rgba(0, 0, 0, .2) !important;
             border-radius: 1.5rem !important;
             box-shadow: 0 1rem 3rem rgba(35, 38, 45, .275);
+
 
             .modal-header {
                 padding: 1rem 2rem 1rem !important;
@@ -50,7 +48,7 @@
             }
 
             .modal-body {
-                padding: 1rem 2.1rem 2rem 2rem !important;
+
                 font-size: 1.1rem;
                 font-weight: 400;
                 line-height: 1.5;
@@ -67,11 +65,49 @@
     }
 }
 
-.show{
-    display: block!important;
+.show {
+    display: block !important;
 }
 
 
 // .modal-backdrop.fade.show {
 //     display: none;
 // }
+
+
+
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+    /* Kaydırma çubuğu genişliği */
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #00a8c6c9;
+    /* Kaydırma çubuğu rengi */
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    /* Kaydırma çubuğu arka plan rengi */
+}
+
+/* İçerik kaydırma çubuğu stilleri (Firefox) */
+.modal-body {
+    scrollbar-width: thin;
+    scrollbar-color: #00a8c6c9 #ffffff;
+}
+
+.modal-body::-moz-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+}
+
+.modal-body::-moz-scrollbar-thumb {
+    background-color: #00a8c6c9;
+}
+
+.modal-body::-moz-scrollbar-track {
+    background-color: #ffffff;
+}
+
