@@ -2,6 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700,700italic);
 body main {
   position: relative; }
+  body main .instagramLogo {
+    font-size: 30px;
+    transition: all 0.4s; }
+  body main .instagramLogo:hover {
+    font-size: 30px;
+    color: #AA06E8;
+    transform: rotate(30deg); }
 
 header {
   position: relative; }
@@ -331,6 +338,27 @@ body {
   .mobile-owl .item a img {
     height: 80px !important;
     max-height: 80px !important; } }
+@media (min-width: 1200px) {
+  #newsPage .container .row .newSliders .newSlide {
+    height: 380px !important; }
+    #newsPage .container .row .newSliders .newSlide .image-container a img {
+      height: 380px !important; }
+    #newsPage .container .row .newSliders .newSlide .image-container video {
+      height: 380px !important; }
+
+  #projectPage .container .row .projectSliders .projectSlide {
+    height: 380px !important; }
+    #projectPage .container .row .projectSliders .projectSlide .image-container a img {
+      height: 380px !important; }
+    #projectPage .container .row .projectSliders .projectSlide .image-container video {
+      height: 380px !important; }
+
+  #midProjectPage .container .row .projectInfoSlides .projectInfoSlide {
+    height: 380px !important; }
+    #midProjectPage .container .row .projectInfoSlides .projectInfoSlide .image-container a img {
+      height: 380px !important; }
+    #midProjectPage .container .row .projectInfoSlides .projectInfoSlide .image-container video {
+      height: 380px !important; } }
 @media (max-height: 700px) {
   #sliderBoxs .sliderRangeBox .revolutionSliderclass .kutus .kutu a .kutuFeature {
     width: 200px !important;
@@ -338,6 +366,30 @@ body {
 @media (min-height: 800px) {
   #sliderBoxs .sliderRangeBox {
     top: 38px !important; } }
+@media (min-height: 1000px) {
+  #sliderBoxs .sliderRangeBox {
+    top: 148px !important; }
+
+  #boxDesctipions {
+    top: 390px !important; } }
+@media (min-height: 1100px) {
+  #sliderBoxs .sliderRangeBox {
+    top: 220px !important; }
+
+  #boxDesctipions {
+    top: 460px !important; } }
+@media (min-height: 1200px) {
+  #sliderBoxs .sliderRangeBox {
+    top: 300px !important; }
+
+  #boxDesctipions {
+    top: 540px !important; } }
+@media (min-height: 1300px) {
+  #sliderBoxs .sliderRangeBox {
+    top: 370px !important; }
+
+  #boxDesctipions {
+    top: 610px !important; } }
 @media (min-width: 992px) {
   .modal,
   .fade {
@@ -355,6 +407,9 @@ body {
       .fade .modal-dialog .modal-content .modal-footer {
         padding: 1rem 2rem 2rem 2rem !important; }
 
+  #projectPage .projectShops .projectShopBoxs .projectShopBox a img {
+    height: 115.5px !important; }
+
   #projectsModalScrollable .modal-dialog .modal-content .modal-body section .container .row {
     display: flex;
     align-items: center; }
@@ -364,6 +419,8 @@ body {
   #newsModalScrollable .modal-dialog .modal-content .modal-body section .container .row {
     display: flex;
     align-items: center; }
+    #newsModalScrollable .modal-dialog .modal-content .modal-body section .container .row .newsBoxs a img {
+      height: 215px !important; }
     #newsModalScrollable .modal-dialog .modal-content .modal-body section .container .row .col-lg-4 {
       width: 30%; }
 
@@ -411,14 +468,17 @@ body {
       transition: all 0.4s; }
 
   #boxDesctipions {
-    left: calc((100vw - 100vw * 0.845)); }
-    #boxDesctipions .row .boxDesc h2 {
+    left: calc((100vw - 100vw * 0.855)); }
+    #boxDesctipions .row .boxDesc h1 {
       font-size: 59px; }
     #boxDesctipions .row .boxDesc p {
       font-size: 16px; }
     #boxDesctipions .row .boxDesc .boxDescButton a {
       padding: 10px 16px 10px 16px;
       font-size: 17px; } }
+@media (max-width: 1280px) {
+  #boxDesctipions {
+    left: calc((100vw - 100vw * 0.828)) !important; } }
 @media only screen and (max-width: 1180px) {
   #sliderBoxs .sliderRangeBox {
     left: calc((100vw - 100vw * 0.715)) !important; }
@@ -426,7 +486,7 @@ body {
       width: 201px !important;
       height: 201px !important; }
 
-  #boxDesctipions .row .boxDesc h2 {
+  #boxDesctipions .row .boxDesc h1 {
     font-size: 56px; }
   #boxDesctipions .row .boxDesc p {
     font-size: 16px; }
@@ -436,6 +496,9 @@ body {
     #boxDesctipions .row .boxDesc .boxDescButton a {
       padding: 10px 16px 10px 16px;
       font-size: 17px; } }
+@media (max-width: 1100px) {
+  #boxDesctipions {
+    left: calc((100vw - 100vw * 0.850)) !important; } }
 @media only screen and (max-width: 992px) {
   .prev-btn,
   .next-btn {
@@ -451,8 +514,8 @@ body {
   .modal .modal-dialog .modal-content .modal-header,
   .fade .modal-dialog .modal-content .modal-header {
     padding: 1rem 2rem 1rem !important; }
-    .modal .modal-dialog .modal-content .modal-header h2,
-    .fade .modal-dialog .modal-content .modal-header h2 {
+    .modal .modal-dialog .modal-content .modal-header h1,
+    .fade .modal-dialog .modal-content .modal-header h1 {
       font-size: calc(1.325rem + .9vw) !important; }
     .modal .modal-dialog .modal-content .modal-header button,
     .fade .modal-dialog .modal-content .modal-header button {
@@ -495,35 +558,12 @@ body {
     padding: 0.4rem 0.7rem;
     margin-bottom: 12px !important; }
 
-  .projectModal .modal-dialog .modal-content .modal-body {
-    padding: 1rem 1rem 2rem 1rem !important; }
-    .projectModal .modal-dialog .modal-content .modal-body section .container .row .projectShops .projectShopBoxs {
-      padding-right: 10px;
-      display: none; }
-      .projectModal .modal-dialog .modal-content .modal-body section .container .row .projectShops .projectShopBoxs a img {
-        width: 100%;
-        transition: all 0.4s;
-        transform: scale(1); }
-      .projectModal .modal-dialog .modal-content .modal-body section .container .row .projectShops .projectShopBoxs .projectBoxTitle {
-        transition: all 0.4s;
-        color: #000; }
-    .projectModal .modal-dialog .modal-content .modal-body section .container .row .projectShops .mobile-owl {
-      display: block !important; }
-    .projectModal .modal-dialog .modal-content .modal-body section .container .row .projectBackBtn {
-      color: #2083fe;
-      background-color: #e4f0ff;
-      transform: scale(1);
-      transition: transform 0.4s;
-      text-transform: uppercase !important;
-      font-weight: 400 !important;
-      letter-spacing: 2px !important;
-      font-size: 24ox !important;
-      padding: 0.4rem 1.1rem;
-      line-height: 1.5;
-      margin-bottom: 17px; }
-      .projectModal .modal-dialog .modal-content .modal-body section .container .row .projectBackBtn i {
-        margin-right: 7px;
-        font-size: .875em; }
+  #projectPage .container .row .projectShops .projectShopBoxs {
+    display: none !important; }
+    #projectPage .container .row .projectShops .projectShopBoxs .projectShopBox {
+      display: none !important; }
+  #projectPage .container .row .projectShops .mobile-owl {
+    display: block !important; }
 
   #sliderMobileBoxs .kutus .col-md-5 .kutu a .kutuFeature {
     width: 200px;
@@ -580,7 +620,34 @@ body {
     width: 156px !important;
     height: 156px !important; }
     #sliderMobileBoxs .kutus .kutu a .kutuFeature span {
-      font-size: 19px !important; } }
+      font-size: 19px !important; }
+
+  #newsPage {
+    margin-top: calc((100vh - 100vh * 0.790));
+    width: 100%;
+    z-index: 5; }
+    #newsPage .container .row .newPagedDownBox .newPageTitleBox h1 {
+      font-weight: 500 !important; }
+    #newsPage .container .row .newPagedDownBox .newPageDescBox p {
+      font-weight: 300 !important; }
+
+  #projectPage {
+    margin-top: calc((100vh - 100vh * 0.790));
+    width: 100%;
+    z-index: 5; }
+    #projectPage .container .row .projectPagedDownBox .projectPageTitleBox h1 {
+      font-weight: 500 !important; }
+    #projectPage .container .row .projectPagedDownBox .projectPageDescBox p {
+      font-weight: 300 !important; }
+
+  #midProjectPage {
+    margin-top: calc((100vh - 100vh * 0.790));
+    width: 100%;
+    z-index: 5; }
+    #midProjectPage .container .row .midProjectPagePagePagedDownBox .midProjectPagePageTitleBox h1 {
+      font-weight: 600 !important; }
+    #midProjectPage .container .row .midProjectPagePagePagedDownBox .midProjectPagePageDescBox p {
+      font-weight: 300 !important; } }
 @media only screen and (max-width: 450px) {
   header #headerSection .row .headLogo .headImageBox {
     width: 192px !important;
@@ -604,7 +671,25 @@ body {
         width: 50px; }
     header #headerSection .row .headRight .headLoginLangueage .headLogin {
       height: 42px !important;
-      width: 42px !important; } }
+      width: 42px !important; }
+
+  #newsPage {
+    margin-top: calc((100vh - 100vh * 0.81)) !important; }
+
+  #projectPage {
+    margin-top: calc((100vh - 100vh * 0.81)) !important; }
+
+  #midProjectPage {
+    margin-top: calc((100vh - 100vh * 0.81)) !important; } }
+@media only screen and (max-width: 376px) {
+  #newsPage {
+    margin-top: calc((100vh - 100vh * 0.79)) !important; }
+
+  #projectPage {
+    margin-top: calc((100vh - 100vh * 0.79)) !important; }
+
+  #midProjectPage {
+    margin-top: calc((100vh - 100vh * 0.79)) !important; } }
 .slider {
   width: 100%;
   height: 100%;
@@ -644,8 +729,8 @@ body {
       border-bottom: 1px solid #dee2e6;
       border-top-left-radius: calc(0.3rem - 1px);
       border-top-right-radius: calc(0.3rem - 1px); }
-      .modal .modal-dialog .modal-content .modal-header h2,
-      .fade .modal-dialog .modal-content .modal-header h2 {
+      .modal .modal-dialog .modal-content .modal-header h1,
+      .fade .modal-dialog .modal-content .modal-header h1 {
         color: #00a7c6;
         margin-bottom: 0;
         line-height: 1.5;
@@ -993,29 +1078,6 @@ body {
     transform: translateY(-6px);
     background-color: #c1dcff; }
 
-.newModal .modal-dialog .modal-content .modal-body section .container .row .newSliders {
-  position: relative;
-  width: 100%;
-  overflow: hidden; }
-  .newModal .modal-dialog .modal-content .modal-body section .container .row .newSliders .newSlide {
-    width: 100%;
-    height: auto;
-    display: none; }
-    .newModal .modal-dialog .modal-content .modal-body section .container .row .newSliders .newSlide .image-container {
-      width: 100%;
-      height: 0;
-      padding-bottom: calc(100% / (16 / 9));
-      /* Ya da resmin oranına göre ayarlayın */
-      position: relative; }
-      .newModal .modal-dialog .modal-content .modal-body section .container .row .newSliders .newSlide .image-container a img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        position: absolute;
-        top: 0;
-        left: 0; }
-
 .prev-btn,
 .next-btn {
   background-color: transparent;
@@ -1314,7 +1376,7 @@ body {
 #sliderBoxs .sliderRangeBox {
   position: absolute;
   top: 0;
-  left: calc((100vw - 100vw * 0.600));
+  left: calc((100vw - 100vw * 0.680));
   transition: all 0.4s; }
   #sliderBoxs .sliderRangeBox .revolutionSliderclass .kutus .kutu a .kutuFeature {
     width: 218px;
@@ -1334,12 +1396,12 @@ body {
   z-index: 20;
   position: absolute;
   top: 290px;
-  left: calc((100vw - 100vw * 0.745));
+  left: calc((100vw - 100vw * 0.825));
   transition: all 0.4s; }
   #boxDesctipions .row .boxDesc {
     width: 200px !important;
     display: none; }
-    #boxDesctipions .row .boxDesc h2 {
+    #boxDesctipions .row .boxDesc h1 {
       z-index: 5;
       text-decoration: none;
       white-space: nowrap;
@@ -1373,5 +1435,219 @@ body {
         opacity: 0.9; }
   #boxDesctipions .row .active {
     display: block; }
+
+.posterImages #imageInput {
+  margin-bottom: 10px; }
+.posterImages #imageErrorMessage {
+  margin-left: 10px;
+  font-size: 25px;
+  margin-top: 5px;
+  color: red; }
+.posterImages #temperoryImages {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding: 7px; }
+  .posterImages #temperoryImages .imageBox {
+    width: 150px;
+    height: 130px;
+    margin-bottom: 10px; }
+    .posterImages #temperoryImages .imageBox .temperorayImage {
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      border: 1px dotted #80808078; }
+    .posterImages #temperoryImages .imageBox p {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      cursor: pointer; }
+      .posterImages #temperoryImages .imageBox p i {
+        color: #ea1c1c; }
+
+#newsPage {
+  margin-top: calc((100vh - 100vh * 0.790));
+  width: 100%;
+  z-index: 5; }
+  #newsPage .container .row .newSliders {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+    #newsPage .container .row .newSliders .newSlide {
+      width: 100%;
+      height: auto;
+      display: none; }
+      #newsPage .container .row .newSliders .newSlide .image-container {
+        width: 100%;
+        height: 0;
+        padding-bottom: calc(100% / (16 / 9));
+        /* Ya da resmin oranına göre ayarlayın */
+        position: relative; }
+        #newsPage .container .row .newSliders .newSlide .image-container a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          position: absolute;
+          top: 0;
+          left: 0; }
+  #newsPage .container .row .newPagedDownBox {
+    background-color: rgba(255, 255, 255, 0.62);
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 0px 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
+    #newsPage .container .row .newPagedDownBox .newPageTitleBox h1 {
+      font-size: 24px;
+      font-weight: 600; }
+    #newsPage .container .row .newPagedDownBox .newPageDescBox p {
+      font-size: 20px;
+      font-weight: 500; }
+
+#BackgorundImageBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+  #BackgorundImageBox .BackgorundPage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.8s; }
+    #BackgorundImageBox .BackgorundPage .BackImage {
+      width: 100%;
+      height: 100%;
+      transition: all 0.8s; }
+      #BackgorundImageBox .BackgorundPage .BackImage img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        pointer-events: none; }
+
+#midProjectPage {
+  margin-top: calc((100vh - 100vh * 0.785));
+  width: 100%;
+  z-index: 5; }
+  #midProjectPage .container .row .projectInfoSlides {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+    #midProjectPage .container .row .projectInfoSlides .projectInfoSlide {
+      width: 100%;
+      height: auto;
+      display: none; }
+      #midProjectPage .container .row .projectInfoSlides .projectInfoSlide .image-container {
+        width: 100%;
+        height: 0;
+        padding-bottom: calc(100% / (16 / 9));
+        /* Ya da resmin oranına göre ayarlayın */
+        position: relative; }
+        #midProjectPage .container .row .projectInfoSlides .projectInfoSlide .image-container a img {
+          width: 100%;
+          height: 100%;
+          object-position: center;
+          position: absolute;
+          top: 0;
+          left: 0; }
+  #midProjectPage .container .row .midProjectPagedDownBox {
+    background-color: rgba(255, 255, 255, 0.62);
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 0px 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
+    #midProjectPage .container .row .midProjectPagedDownBox .midProjectPageTitleBox h1 {
+      font-size: 24px;
+      font-weight: 600; }
+    #midProjectPage .container .row .midProjectPagedDownBox .midProjectPageDescBox p {
+      font-size: 20px;
+      font-weight: 500; }
+
+#projectPage {
+  margin-top: calc((100vh - 100vh * 0.785));
+  width: 100%;
+  z-index: 5; }
+  #projectPage .container .row .projectSliders {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+    #projectPage .container .row .projectSliders .projectSlide {
+      width: 100%;
+      height: auto;
+      display: none; }
+      #projectPage .container .row .projectSliders .projectSlide .image-container {
+        width: 100%;
+        height: 0;
+        padding-bottom: calc(100% / (16 / 9));
+        /* Ya da resmin oranına göre ayarlayın */
+        position: relative; }
+        #projectPage .container .row .projectSliders .projectSlide .image-container a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          position: absolute;
+          top: 0;
+          left: 0; }
+  #projectPage .container .row .projectPagedDownBox {
+    background-color: rgba(255, 255, 255, 0.62);
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 0px 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
+    #projectPage .container .row .projectPagedDownBox .projectPageTitleBox h1 {
+      font-size: 24px;
+      font-weight: 600; }
+    #projectPage .container .row .projectPagedDownBox .projectPageDescBox p {
+      font-size: 20px;
+      font-weight: 500; }
+  #projectPage .container .row .projectShops .projectShopBoxs .projectShopBox {
+    padding-right: 10px;
+    transition: all 0.4s; }
+    #projectPage .container .row .projectShops .projectShopBoxs .projectShopBox a img {
+      width: 100%;
+      transition: all 0.4s;
+      transform: scale(1); }
+    #projectPage .container .row .projectShops .projectShopBoxs .projectShopBox a:hover img {
+      transform: translateY(-10px); }
+    #projectPage .container .row .projectShops .projectShopBoxs .projectShopBox .projectBoxTitle {
+      transition: all 0.4s;
+      color: #000;
+      font-weight: 600; }
+    #projectPage .container .row .projectShops .projectShopBoxs .projectShopBox .projectBoxTitle:hover {
+      color: #00a7c6; }
+  #projectPage .container .row .projectShops .mobile-owl {
+    transition: all 0.4s;
+    display: none; }
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #00a8c6c9 #ffffff;
+  /* Kaydırma çubuğu genişliği */ }
+
+::-webkit-scrollbar-thumb {
+  background-color: #00a8c6c9;
+  /* Kaydırma çubuğu rengi */ }
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  scrollbar-width: thin;
+  scrollbar-color: #00a8c6c9 #ffffff;
+  /* Kaydırma çubuğu arka plan rengi */ }
+
+::-moz-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #00a8c6c9 #ffffff; }
+
+::-moz-scrollbar-thumb {
+  background-color: #00a8c6c9; }
+
+::-moz-scrollbar-track {
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
